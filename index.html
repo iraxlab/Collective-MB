@@ -139,13 +139,8 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
         <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Get in touch<span style="display:inline-block;font-size:16px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
         <button onClick="{{ goWeb }}" style="background:transparent;color:#F6F1E7;border:1px solid #C9A961;padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628">View our work</button>
       </div>
-      <sc-if value="{{ avShow }}" hint-placeholder-val="{{ false }}">
-        <button onClick="{{ avPlayIntro }}" style="align-self:flex-start;display:inline-flex;align-items:center;gap:12px;background:transparent;border:0;padding:6px 0;cursor:pointer;font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#F6F1E7" style-hover="opacity:0.8">
-          <span style="width:48px;height:48px;border-radius:50%;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center;flex:none;animation:cmbAvRing 2.4s ease-out infinite"><svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A961" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"></path></svg></span>
-          Watch the intro
-        </button>
-      </sc-if>
-    </div>
+      
+      </div>
     <sc-if value="{{ avHiIntro }}" hint-placeholder-val="{{ false }}"><div aria-hidden="true" style="position:absolute;inset:12px;border:1px solid #C9A961;box-shadow:0 0 0 1px rgba(201,169,97,0.25),inset 0 0 40px rgba(201,169,97,0.12);pointer-events:none;z-index:3"></div></sc-if>
   </section>
 
@@ -168,12 +163,7 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Who we are</span>
         <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,3.52vw,58px);line-height:1.05">Our values, our work, our goals</h2>
         <span style="width:84px;height:1px;background:#C9A961"></span>
-        <sc-if value="{{ avShow }}" hint-placeholder-val="{{ false }}">
-        <button onClick="{{ avPlayWho }}" style="align-self:center;display:inline-flex;align-items:center;gap:12px;background:transparent;border:0;padding:6px 0;cursor:pointer;font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#0A1628" style-hover="opacity:0.8">
-          <span style="width:48px;height:48px;border-radius:50%;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center;flex:none;animation:cmbAvRing 2.4s ease-out infinite"><svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A961" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"></path></svg></span>
-          Hear who we are
-        </button>
-      </sc-if>
+        
       </div>
       <div style="display:grid;grid-template-columns:{{ gPill }};gap:36px">
         <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="3">
@@ -987,7 +977,7 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
           <button onClick="{{ avClose }}" aria-label="Minimize video" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid rgba(201,169,97,0.5);color:#F6F1E7;cursor:pointer;font-size:18px;line-height:1" style-hover="background:#C9A961;color:#0A1628">&#8211;</button>
           </div>
         </div>
-        <div style="position:relative;aspect-ratio:9/16;max-height:calc(100vh - 290px);background:#081221;overflow:hidden">
+        <div style="position:relative;aspect-ratio:9/16;max-height:{{ avMaxH }};background:#081221;overflow:hidden">
           <video ref="{{ avRef }}" src="{{ avSrc }}" autoPlay="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="metadata" onEnded="{{ avEnded }}" onClick="{{ avToggle }}" style="cursor:pointer;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block"></video>
           <sc-if value="{{ avMissing }}" hint-placeholder-val="{{ false }}">
             <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;text-align:center;background:#0A1628">
@@ -1163,7 +1153,7 @@ const rnd = (a,b) => a + Math.random()*(b-a);
 const SPARKS = Array.from({length:26},()=>({ l: rnd(0,100), s: rnd(2,5), d: rnd(9,18), delay: -rnd(0,18), b: rnd(4,30) }));
 const BUCKS = Array.from({length:14},()=>({ l: rnd(2,96), s: rnd(26,64), d: rnd(11,20), delay: -rnd(0,20), o: rnd(0.12,0.32), b: rnd(-10,30) }));
 class Component extends DCLogic {
-  state = { page: fromHash() || (typeof localStorage !== 'undefined' && localStorage.getItem('cmb3_page')) || 'about', topic: 0, faq: 0, step: 0, stepAnim: false, sent: false, w: typeof window !== 'undefined' ? window.innerWidth : 1440, menuOpen: false, showTop: false };
+  state = { page: fromHash() || 'about', topic: 0, faq: 0, step: 0, stepAnim: false, sent: false, w: typeof window !== 'undefined' ? window.innerWidth : 1440, menuOpen: false, showTop: false };
   go(page, ev) {
     if (ev && ev.preventDefault) ev.preventDefault();
     try { localStorage.setItem('cmb3_page', page); } catch (e) {}
@@ -1190,7 +1180,7 @@ class Component extends DCLogic {
     const capArr = CLIPS[ch].cap, capI = Math.min(this.state.avCapI || 0, capArr.length - 1);
     const live = /github\.io|collectivemb/.test(location.hostname), allMissing = CLIPS.every(c => miss[c.src]);
     return {
-      avShow: isHome && !(live && allMissing), avOpen: !!this.state.avOpen, avClosed: !this.state.avOpen, avW: phone ? 'min(240px, calc(100vw - 30px))' : '270px',
+      avShow: isHome && !(live && allMissing), avOpen: !!this.state.avOpen, avClosed: !this.state.avOpen, avW: phone ? '168px' : '260px', avMaxH: phone ? '42vh' : 'calc(100vh - 290px)',
       avSrc: CLIPS[ch].src, avMissing: !!miss[CLIPS[ch].src], avShowUnmute: muted && !miss[CLIPS[ch].src],
       avPhotoRef: el => { if (el && this.state.avNoPhoto === false && !el.src.includes('collective-mb-avatar')) el.src = 'images/collective-mb-avatar.webp'; },
       avRef: el => { this._av = el; if (el) { el.muted = muted; if (!el._cmbPP) { el._cmbPP = true; el.addEventListener('play', () => this.setState({ avPaused: false })); el.addEventListener('pause', () => this.setState({ avPaused: true })); } if (!el._cmbCap) { el._cmbCap = true; el.addEventListener('timeupdate', () => { const c = CLIPS[this.state.avCh || 0].cap, d = el.duration || 0; if (!d) return; const tot = c.reduce((a,s) => a + s.length, 0); let acc = 0, idx = 0; const p = el.currentTime / d * tot; for (let i = 0; i < c.length; i++) { acc += c[i].length; if (p <= acc) { idx = i; break; } idx = i; } if (idx !== (this.state.avCapI || 0)) this.setState({ avCapI: idx }); }); } if (this.state.avNoPhoto === false && !el.poster) el.poster = 'images/collective-mb-avatar.webp'; if (!el._cmbErr) { el._cmbErr = true; el.addEventListener('error', () => this.setState(s => ({ avMiss: { ...(s.avMiss || {}), [CLIPS[s.avCh || 0].src]: true } }))); } } },
@@ -1212,7 +1202,7 @@ class Component extends DCLogic {
     { const ph2 = new Image(); ph2.onload = () => this.setState({ avNoPhoto: false }); ph2.src = 'images/collective-mb-avatar.webp'; }
     this._avScroll = () => { if (!this.state.avOpen || this.state.avPaused || this.state.avMuted === false || (this._avLock || 0) > Date.now()) return; const w = document.getElementById('avs-who'); if (!w) return; const want = w.getBoundingClientRect().top < window.innerHeight * 0.5 ? 1 : 0; if (want !== (this.state.avCh || 0)) { this.setState({ avCh: want }); this.avPlay(); } };
     window.addEventListener('scroll', this._avScroll, { passive: true });
-    try { if (!localStorage.getItem('cmb-avatar-seen')) { localStorage.setItem('cmb-avatar-seen', '1'); setTimeout(() => { this.setState({ avOpen: true, avMuted: true }); this.avPlay(); }, 1800); } } catch (e) {}
+    try { if (!localStorage.getItem('cmb-avatar-seen')) { localStorage.setItem('cmb-avatar-seen', '1'); if (window.innerWidth >= 700) setTimeout(() => { this.setState({ avOpen: true, avMuted: true }); this.avPlay(); }, 1800); } } catch (e) {}
     this.pickStep(0);
     this._appliedPage = this.state.page; this.fx(); this.seo(); setTimeout(() => this.seo(), 300); setTimeout(() => this.seo(), 1200);
     this._onResize = () => { const w = window.innerWidth; if (Math.abs(w - this.state.w) > 4) this.setState({ w }); };
