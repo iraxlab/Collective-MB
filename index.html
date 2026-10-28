@@ -949,11 +949,6 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
       <img loading="lazy" decoding="async" src="images/collective-mb-logo-gold.webp" alt="CollectiveMB" style="height:{{ footLogo }};width:auto;display:block">
       <span style="font-family:'Cormorant Garamond',serif;font-size:{{ footWord }};font-weight:500;letter-spacing:0.22em;text-transform:uppercase">Collective MB</span>
     </div>
-    <nav aria-label="Footer" style="display:grid;grid-template-columns:{{ footNavCols }};justify-items:center;gap:{{ footNavGap }};width:100%;max-width:1100px">
-      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
-        <a href="{{ n.href }}" onClick="{{ n.go }}" style="color:#F6F1E7;font-family:Montserrat,sans-serif;font-size:14px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;transition:color .2s ease" style-hover="color:#C9A961;opacity:1">{{ n.label }}</a>
-      </sc-for>
-    </nav>
     <div style="width:100%;display:flex;flex-direction:{{ footRowDir }};justify-content:space-between;align-items:center;gap:18px;border-top:1px solid #24364F;padding:{{ footRowPad }};font-size:14px;letter-spacing:0.08em">
       <span>© 2026 CollectiveMB. All rights reserved.</span>
       <div style="display:flex;gap:30px">
