@@ -511,8 +511,8 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
       </div>
       <div style="display:grid;grid-template-columns:{{ g4 }};border-top:1px solid #E2D6BD;border-left:1px solid #E2D6BD">
         <sc-for list="{{ clients }}" as="c" hint-placeholder-count="12">
-          <div style="aspect-ratio:3/2;border-right:1px solid #E2D6BD;border-bottom:1px solid #E2D6BD;display:flex;align-items:center;justify-content:center;padding:36px;background:#FFFFFF">
-            <img loading="lazy" decoding="async" src="{{ c }}" alt="Collective MB client brand logo" style="max-width:100%;max-height:100%;object-fit:contain;display:block">
+          <div style="aspect-ratio:3/2;min-width:0;overflow:hidden;border-right:1px solid #E2D6BD;border-bottom:1px solid #E2D6BD;display:flex;align-items:center;justify-content:center;padding:{{ logoPad }};background:#FFFFFF">
+            <img loading="lazy" decoding="async" src="{{ c }}" alt="Collective MB client brand logo" style="width:100%;height:100%;object-fit:contain;display:block">
           </div>
         </sc-for>
       </div>
@@ -672,9 +672,9 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
       </div>
       <div style="display:grid;grid-template-columns:{{ g4 }};border-top:1px solid #C9A961;border-left:1px solid rgba(201,169,97,0.35)">
         <sc-for list="{{ createdFor }}" as="c" hint-placeholder-count="12">
-          <div style="padding:33px 30px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;border-right:1px solid rgba(201,169,97,0.35);border-bottom:1px solid rgba(201,169,97,0.35);transition:background-color .2s ease" style-hover="background:#0F2038">
+          <div style="padding:{{ forPad }};min-width:0;min-height:{{ forMin }};display:flex;flex-direction:column;justify-content:space-between;gap:15px;border-right:1px solid rgba(201,169,97,0.35);border-bottom:1px solid rgba(201,169,97,0.35);transition:background-color .2s ease" style-hover="background:#0F2038">
             <span style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#C9A961;line-height:1">{{ c.n }}</span>
-            <span style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;line-height:1.1">{{ c.t }}</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:{{ forSize }};font-weight:500;line-height:1.15;overflow-wrap:break-word;hyphens:auto;text-wrap:balance">{{ c.t }}</span>
           </div>
         </sc-for>
       </div>
@@ -1281,6 +1281,7 @@ class Component extends DCLogic {
       mustAttend: STATIC.mustAttend.map((m,i) => ({ ...m, bl: (i > 0 && this.state.w >= 1180) ? '1px solid #C9A961' : '0' })),
       videoFacts: [{ v:'15+', l:'Years of combined experience in video production' },{ v:'100s', l:'Of corporate and event videos produced' },{ v:'4K', l:'35mm digital cinema cameras on every shoot' }],
       g4: 'repeat(' + (this.state.w >= 900 ? 4 : 2) + ',minmax(0,1fr))',
+      logoPad: phone ? '18px 21px' : '36px', forPad: phone ? '21px 15px' : '33px 30px', forMin: phone ? '120px' : '150px', forSize: phone ? '20px' : '26px',
       gTwo: 'repeat(' + (this.state.w >= 900 ? 2 : 1) + ',minmax(0,1fr))',
       galCols: this.state.w >= 900 ? 3 : (this.state.w >= 560 ? 2 : 1), gGal: 'repeat(' + (this.state.w >= 560 ? 3 : 1) + ',minmax(0,1fr))', galGap: this.state.w >= 900 ? '18px' : '9px',
       gFeat: 'repeat(' + (this.state.w >= 1100 ? 3 : 1) + ',minmax(0,1fr))',
