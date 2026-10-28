@@ -87,11 +87,11 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
   <div role="dialog" aria-label="Menu" style="position:fixed;inset:0;z-index:60;background:#0A1628;color:#F6F1E7;display:flex;flex-direction:column;padding:24px 6vw 36px;overflow-y:auto">
     <div style="display:flex;justify-content:space-between;align-items:center">
       <img src="assets/logo-gold.png" alt="CollectiveMB logo" style="height:56px;width:auto;display:block">
-      <button onClick="{{ closeMenu }}" aria-label="Close menu" style="width:42px;height:42px;background:transparent;border:1px solid #C9A961;color:#E6CD8E;cursor:pointer;font-family:Montserrat,sans-serif;font-size:22px;line-height:1">×</button>
+      <button onClick="{{ closeMenu }}" aria-label="Close menu" style="width:42px;height:42px;background:transparent;border:1px solid #C9A961;color:#E6CD8E;cursor:pointer;font-family:Montserrat,sans-serif;font-size:20px;line-height:1">×</button>
     </div>
     <nav aria-label="Mobile" style="flex:none;display:flex;flex-direction:column;margin:48px 0 36px;border-top:1px solid rgba(201,169,97,0.4)">
       <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
-        <a href="{{ n.href }}" onClick="{{ n.go }}" style="display:flex;justify-content:space-between;align-items:center;padding:21px 0;border-bottom:1px solid rgba(201,169,97,0.4);font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;color:{{ n.mColor }}"><span style="flex:1;min-width:0;white-space:nowrap">{{ n.title }}</span><span style="font-size:20px;color:#C9A961">→</span></a>
+        <a href="{{ n.href }}" onClick="{{ n.go }}" style="display:flex;justify-content:space-between;align-items:center;padding:21px 0;border-bottom:1px solid rgba(201,169,97,0.4);font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:500;color:{{ n.mColor }}"><span style="flex:1;min-width:0;white-space:nowrap">{{ n.title }}</span><span style="font-size:18px;color:#C9A961">→</span></a>
       </sc-for>
     </nav>
     <div style="display:flex;gap:12px;align-items:center;margin-top:auto">
@@ -112,69 +112,68 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     {{ heroFx }}
     <div style="position:relative;width:100%;max-width:1600px;margin:0 auto;padding:120px 5vw 96px;display:flex;flex-direction:column;gap:33px">
       <div style="display:flex;align-items:center;gap:18px;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#D8BD7E"><span style="width:60px;height:1px;background:#C9A961"></span>About Collective MB</div>
-      <h1 style="margin:0;max-width:1100px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(48px,5.4vw,88px);line-height:1.04;text-wrap:balance">We take the heavy lifting out of managing a growing business.</h1>
+      <h1 style="margin:0;max-width:1100px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.32vw,70px);line-height:1.04;text-wrap:balance">We take the heavy lifting out of managing a growing business.</h1>
       <div style="display:flex;gap:18px;flex-wrap:wrap;padding-top:9px">
-        <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Get in touch<span style="display:inline-block;font-size:18px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
-        <button onClick="{{ goWeb }}" style="background:transparent;color:#F6F1E7;border:1px solid #C9A961;padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628">View our work</button>
+        <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Get in touch<span style="display:inline-block;font-size:16px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
+        <button onClick="{{ goWeb }}" style="background:transparent;color:#F6F1E7;border:1px solid #C9A961;padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628">View our work</button>
       </div>
     </div>
   </section>
 
   <section style="background:#FFFFFF;border-bottom:1px solid #E2D6BD;padding:36px 0">{{ clientMarquee }}</section>
-  <section style="background:#FFFFFF;padding:clamp(84px,8vw,132px) 0">
+  <section style="background:#FFFFFF;padding:clamp(60px,6vw,96px) 0">
     <div style="max-width:1600px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:54px;align-items:center;text-align:center">
       <div style="display:flex;flex-direction:column;gap:18px;align-items:center">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Our clients</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05">Brands we have worked with</h2>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.20vw,51px);line-height:1.05">Brands we have worked with</h2>
       </div>
       <img src="assets/hero.png" alt="Client brands including Vogue, Four Seasons, Versace, The Biltmore, Vera Wang and more" style="width:100%;max-width:1500px;height:auto;display:block">
     </div>
   </section>
 
-  <section style="position:relative;overflow:hidden;background:#F6F1E7;padding:clamp(108px,11vw,180px) 0">
+  <section style="position:relative;overflow:hidden;background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     {{ calmFx }}
     <div style="position:relative;max-width:1560px;margin:0 auto;padding:0 5vw">
-      <div style="display:flex;flex-direction:column;gap:21px;align-items:center;text-align:center;margin-bottom:84px">
+      <div style="display:flex;flex-direction:column;gap:21px;align-items:center;text-align:center;margin-bottom:60px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Who we are</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(42px,4.4vw,72px);line-height:1.05">Our values, our work, our goals</h2>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,3.52vw,58px);line-height:1.05">Our values, our work, our goals</h2>
         <span style="width:84px;height:1px;background:#C9A961"></span>
       </div>
       <div style="display:grid;grid-template-columns:{{ gPill }};gap:36px">
         <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="3">
-          <article style="display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:27px;background:{{ p.bg }};color:{{ p.fg }};border:1px solid #C9A961;border-top:6px solid #C9A961;padding:clamp(45px,4vw,66px) clamp(33px,3.2vw,54px);box-shadow:0 34px 70px -40px rgba(10,22,40,0.55);transition:transform .5s cubic-bezier(.2,.6,.2,1),box-shadow .5s ease" style-hover="transform:translateY(-8px);box-shadow:0 48px 90px -40px rgba(10,22,40,0.7)">
-            <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(42px,3.4vw,58px);line-height:1.02;align-self:end">{{ p.t }}</h3>
+          <article style="display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:27px;background:{{ p.bg }};color:{{ p.fg }};border:1px solid #C9A961;border-top:6px solid #C9A961;padding:clamp(36px,3.2vw,48px) clamp(27px,2.6vw,42px);box-shadow:0 34px 70px -40px rgba(10,22,40,0.55);transition:transform .5s cubic-bezier(.2,.6,.2,1),box-shadow .5s ease" style-hover="transform:translateY(-8px);box-shadow:0 48px 90px -40px rgba(10,22,40,0.7)">
+            <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,2.72vw,46px);line-height:1.02;align-self:end">{{ p.t }}</h3>
             <span style="width:60px;height:1px;background:#C9A961"></span>
-            <p style="margin:0;font-size:20px;line-height:1.85;text-wrap:pretty">{{ p.d }}</p>
+            <p style="margin:0;font-size:18px;line-height:1.85;text-wrap:pretty">{{ p.d }}</p>
           </article>
         </sc-for>
       </div>
     </div>
   </section>
 
-  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw">
-      <div style="display:flex;flex-direction:column;gap:18px;margin-bottom:clamp(60px,6vw,96px);align-items:center;text-align:center">
+      <div style="display:flex;flex-direction:column;gap:18px;margin-bottom:clamp(48px,5vw,72px);align-items:center;text-align:center">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">The team</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4.2vw,68px);line-height:1.05">The people behind Collective MB</h2>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.36vw,54px);line-height:1.05">The people behind Collective MB</h2>
       </div>
-      <div style="display:flex;flex-direction:column;gap:clamp(84px,8vw,132px)">
+      <div style="display:flex;flex-direction:column;gap:clamp(60px,6vw,96px)">
         <sc-for list="{{ team }}" as="m" hint-placeholder-count="2">
-          <article style="display:flex;flex-direction:{{ m.dir }};flex-wrap:wrap;gap:48px 84px;align-items:center">
-            <div style="position:relative;flex:1 1 380px;max-width:600px;padding:0 27px 27px 0">
-              <div aria-hidden="true" style="position:absolute;left:27px;top:27px;right:0;bottom:0;border:1px solid #C9A961"></div>
+          <article style="display:flex;flex-direction:{{ m.dir }};flex-wrap:wrap;gap:39px 72px;align-items:center;justify-content:center">
+            <div style="position:relative;flex:0 1 380px;max-width:400px;padding:0 21px 21px 0">
+              <div aria-hidden="true" style="position:absolute;left:21px;top:21px;right:0;bottom:0;border:1px solid #C9A961"></div>
               <div style="position:relative;overflow:hidden;border:1px solid rgba(201,169,97,0.6);box-shadow:0 40px 80px -40px rgba(0,0,0,0.8)">
                 <img src="{{ m.img }}" alt="{{ m.name }}, {{ m.role }} at Collective MB" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;display:block;background:#0F2038;transition:transform 1.2s cubic-bezier(.2,.6,.2,1)" style-hover="transform:scale(1.06)">
               </div>
-              <span style="position:absolute;left:-12px;bottom:6px;background:linear-gradient(135deg,#A9864A,#E6CD8E 50%,#A9864A);color:#0A1628;font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;padding:12px 18px;line-height:1">{{ m.n }}</span>
             </div>
             <div style="flex:1.2 1 420px;display:flex;flex-direction:column;gap:24px">
               <div style="display:flex;flex-direction:column;gap:12px">
                 <span style="font-size:14px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#C9A961">{{ m.role }}</span>
-                <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,3.6vw,60px);line-height:1.05">{{ m.name }}</h3>
+                <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,2.88vw,48px);line-height:1.05">{{ m.name }}</h3>
                 <span style="width:84px;height:1px;background:#C9A961;margin-top:9px"></span>
               </div>
               <sc-for list="{{ m.bio }}" as="b" hint-placeholder-count="2">
-                <p style="margin:0;font-size:18px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">{{ b }}</p>
+                <p style="margin:0;font-size:16px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">{{ b }}</p>
               </sc-for>
               <div style="padding-top:9px"><button onClick="{{ goContact }}" style="background:transparent;color:#F6F1E7;border:1px solid #C9A961;padding:18px 36px;cursor:pointer;font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease" style-hover="background:#C9A961;color:#0A1628">Contact {{ m.first }}</button></div>
             </div>
@@ -191,41 +190,41 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     {{ heroFx }}
     <div style="position:relative;width:100%;max-width:1600px;margin:0 auto;padding:120px 5vw;display:flex;flex-direction:column;gap:45px">
       <div style="display:flex;align-items:center;gap:18px;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#D8BD7E"><span style="width:60px;height:1px;background:#C9A961"></span>Website Developer</div>
-      <h1 style="margin:0;max-width:1200px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(48px,5.4vw,88px);line-height:1.04;text-wrap:balance">Ignite your digital presence with our expert A.I. web solutions</h1>
+      <h1 style="margin:0;max-width:1200px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.32vw,70px);line-height:1.04;text-wrap:balance">Ignite your digital presence with our expert A.I. web solutions</h1>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:30px 72px;max-width:1300px;border-top:1px solid rgba(201,169,97,0.5);padding-top:45px">
-        <p style="margin:0;font-size:19px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">A strong online presence is more than a free, pretty template. It is about reaching and converting customers and making a lasting impact with your brand’s audience. Our custom-designed websites work seamlessly with A.I. marketing, using SEO and keyword-first content with social media integration to increase awareness and conversion.</p>
-        <p style="margin:0;font-size:19px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">By building custom websites with real functionality, we turn casual visitors into loyal customers, driving growth and sales and strengthening your market position. From essential web presence to advanced business sites, our A.I.-driven web development services elevate your brand’s visibility.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">A strong online presence is more than a free, pretty template. It is about reaching and converting customers and making a lasting impact with your brand’s audience. Our custom-designed websites work seamlessly with A.I. marketing, using SEO and keyword-first content with social media integration to increase awareness and conversion.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">By building custom websites with real functionality, we turn casual visitors into loyal customers, driving growth and sales and strengthening your market position. From essential web presence to advanced business sites, our A.I.-driven web development services elevate your brand’s visibility.</p>
       </div>
       <div style="display:flex;gap:18px;flex-wrap:wrap">
-        <button onClick="{{ toPackages }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">View packages<span style="display:inline-block;font-size:18px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
-        <button onClick="{{ goContact }}" style="background:transparent;color:#F6F1E7;border:1px solid #C9A961;padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628">Start a project</button>
+        <button onClick="{{ toPackages }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">View packages<span style="display:inline-block;font-size:16px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
+        <button onClick="{{ goContact }}" style="background:transparent;color:#F6F1E7;border:1px solid #C9A961;padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628">Start a project</button>
       </div>
     </div>
   </section>
 
-  <section style="background:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1600px;margin:0 auto;padding:0 5vw">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px 72px;align-items:end;margin-bottom:60px">
         <div style="display:flex;flex-direction:column;gap:18px">
           <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Selected work</span>
-          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4.2vw,68px);line-height:1.05">Website examples</h2>
+          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.36vw,54px);line-height:1.05">Website examples</h2>
         </div>
-        <p style="margin:0;font-size:19px;line-height:1.8">A selection of websites we have designed and built for hotels, resorts, events, fashion, spirits and lifestyle brands.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8">A selection of websites we have designed and built for hotels, resorts, events, fashion, spirits and lifestyle brands.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:30px;margin-bottom:30px">
         <sc-for list="{{ featuredSites }}" as="s" hint-placeholder-count="2">
           <a href="{{ s.href }}" target="{{ s.target }}" rel="noopener" style="display:flex;flex-direction:column;height:100%;background:#FFFFFF;border:1px solid #E2D6BD;box-shadow:0 20px 44px -30px rgba(10,22,40,0.45);transition:border-color .3s ease,box-shadow .3s ease,transform .3s ease" style-hover="border-color:#C9A961;box-shadow:0 34px 60px -28px rgba(10,22,40,0.55);transform:translateY(-6px);opacity:1">
             <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:#0A1628;border-bottom:1px solid #E2D6BD">
               <sc-if value="{{ s.img }}" hint-placeholder-val="{{ true }}"><img src="{{ s.img }}" alt="{{ s.name }} website" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if>
-              <sc-if value="{{ s.noImg }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:15px;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center"><span style="font-family:'Cormorant Garamond',serif;font-size:36px;color:#D8BD7E;line-height:1.1">{{ s.name }}</span></div></sc-if>
+              <sc-if value="{{ s.noImg }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:15px;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center"><span style="font-family:'Cormorant Garamond',serif;font-size:31px;color:#D8BD7E;line-height:1.1">{{ s.name }}</span></div></sc-if>
             </div>
             <div style="display:flex;flex-direction:column;gap:27px;padding:33px 33px 30px;flex:1">
             <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#8A6A2E">{{ s.num }}</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#8A6A2E">{{ s.num }}</span>
               <span style="font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8A6A2E">{{ s.kind }}</span>
             </div>
             <div style="display:flex;flex-direction:column;gap:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500;line-height:1.08">{{ s.name }}</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:31px;font-weight:500;line-height:1.08">{{ s.name }}</span>
               <span style="font-size:16px;line-height:1.5">{{ s.type }}</span>
             </div>
             <span style="margin-top:auto;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;display:flex;gap:9px;align-items:center;border-top:1px solid #E2D6BD;padding-top:18px;white-space:nowrap"><span style="white-space:nowrap">{{ s.cta }}</span> <span style="color:#8A6A2E">→</span></span>
@@ -238,15 +237,15 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
           <a href="{{ s.href }}" target="{{ s.target }}" rel="noopener" style="display:flex;flex-direction:column;height:100%;background:#FFFFFF;border:1px solid #E2D6BD;box-shadow:0 20px 44px -30px rgba(10,22,40,0.45);transition:border-color .3s ease,box-shadow .3s ease,transform .3s ease" style-hover="border-color:#C9A961;box-shadow:0 34px 60px -28px rgba(10,22,40,0.55);transform:translateY(-6px);opacity:1">
             <div style="position:relative;aspect-ratio:16/10;overflow:hidden;background:#0A1628;border-bottom:1px solid #E2D6BD">
               <sc-if value="{{ s.img }}" hint-placeholder-val="{{ true }}"><img src="{{ s.img }}" alt="{{ s.name }} website" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></sc-if>
-              <sc-if value="{{ s.noImg }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:15px;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center"><span style="font-family:'Cormorant Garamond',serif;font-size:36px;color:#D8BD7E;line-height:1.1">{{ s.name }}</span></div></sc-if>
+              <sc-if value="{{ s.noImg }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:15px;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center"><span style="font-family:'Cormorant Garamond',serif;font-size:31px;color:#D8BD7E;line-height:1.1">{{ s.name }}</span></div></sc-if>
             </div>
             <div style="display:flex;flex-direction:column;gap:27px;padding:33px 33px 30px;flex:1">
             <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:24px;color:#8A6A2E">{{ s.num }}</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#8A6A2E">{{ s.num }}</span>
               <span style="font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#8A6A2E">{{ s.kind }}</span>
             </div>
             <div style="display:flex;flex-direction:column;gap:12px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500;line-height:1.08">{{ s.name }}</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:31px;font-weight:500;line-height:1.08">{{ s.name }}</span>
               <span style="font-size:16px;line-height:1.5">{{ s.type }}</span>
             </div>
             <span style="margin-top:auto;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;display:flex;gap:9px;align-items:center;border-top:1px solid #E2D6BD;padding-top:18px;white-space:nowrap"><span style="white-space:nowrap">{{ s.cta }}</span> <span style="color:#8A6A2E">→</span></span>
@@ -257,13 +256,13 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     </div>
   </section>
 
-  <section id="packages" style="background:#0A1628;color:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section id="packages" style="background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1600px;margin:0 auto;padding:0 5vw">
-      <div style="display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center;margin-bottom:72px">
+      <div style="display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center;margin-bottom:54px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Pricing</span>
         <span style="width:84px;height:1px;background:#C9A961"></span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4.2vw,68px);line-height:1.05">Website packages</h2>
-        <p style="margin:0;font-size:19px;line-height:1.8;color:#E7E0D2;max-width:720px">Three packages, each a full new custom build. A 50% deposit begins every project.</p>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.36vw,54px);line-height:1.05">Website packages</h2>
+        <p style="margin:0;font-size:17px;line-height:1.8;color:#E7E0D2;max-width:720px">Three packages, each a full new custom build. A 50% deposit begins every project.</p>
       </div>
       <div style="display:grid;grid-template-columns:{{ gPkg }};gap:0 24px">
         <sc-for list="{{ packages }}" as="p" hint-placeholder-count="3">
@@ -273,22 +272,22 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
                 <span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:{{ p.accent }}">{{ p.tag }}</span>
                 <sc-if value="{{ p.featured }}" hint-placeholder-val="{{ false }}"><span style="background:#C9A961;color:#0A1628;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;padding:6px 12px">Most complete</span></sc-if>
               </div>
-              <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,2.8vw,46px);line-height:1.05">{{ p.name }}</h3>
+              <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(29px,2.24vw,37px);line-height:1.05">{{ p.name }}</h3>
             </div>
             <div style="display:flex;flex-direction:column;gap:9px;padding:30px 0;border-top:1px solid {{ p.line }};border-bottom:1px solid {{ p.line }}">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(40px,3.2vw,54px);font-weight:500;line-height:1;color:{{ p.accent }}">{{ p.price }}</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,2.56vw,43px);font-weight:500;line-height:1;color:{{ p.accent }}">{{ p.price }}</span>
               <span style="font-size:15px;line-height:1.5">{{ p.maint }}</span>
             </div>
-            <p style="margin:0;padding:30px 0;font-size:17px;line-height:1.75">{{ p.desc }}</p>
+            <p style="margin:0;padding:30px 0;font-size:16px;line-height:1.75">{{ p.desc }}</p>
             <ul style="margin:0;padding:0 0 30px;list-style:none;display:flex;flex-direction:column;gap:15px">
               <sc-for list="{{ p.items }}" as="it" hint-placeholder-count="8">
-                <li style="font-size:17px;line-height:1.5;display:grid;grid-template-columns:24px 1fr;gap:12px"><span style="width:20px;height:20px;border:1px solid #C9A961;color:{{ p.accent }};font-size:11px;display:flex;align-items:center;justify-content:center;margin-top:2px">✓</span><span>{{ it }}</span></li>
+                <li style="font-size:16px;line-height:1.5;display:grid;grid-template-columns:24px 1fr;gap:12px"><span style="width:20px;height:20px;border:1px solid #C9A961;color:{{ p.accent }};font-size:11px;display:flex;align-items:center;justify-content:center;margin-top:2px">✓</span><span>{{ it }}</span></li>
               </sc-for>
             </ul>
             <p style="margin:0;padding:24px 0;border-top:1px solid {{ p.line }};font-size:16px;line-height:1.7;align-self:start">{{ p.note }}</p>
             <div style="display:flex;flex-direction:column;gap:15px;align-self:end">
               <span style="font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase">Deposit amount: 50%</span>
-              <button onClick="{{ goContact }}" style="width:100%;background:{{ p.btnBg }};background-size:200% 100%;color:{{ p.btnFg }};border:1px solid #C9A961;padding:22px clamp(24px,4vw,24px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:15px;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;transition:filter .2s ease,transform .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px)"><span>Choose {{ p.short }}</span><span style="display:inline-block;font-size:18px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
+              <button onClick="{{ goContact }}" style="width:100%;background:{{ p.btnBg }};background-size:200% 100%;color:{{ p.btnFg }};border:1px solid #C9A961;padding:18px clamp(21px,3.4vw,24px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:15px;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;transition:filter .2s ease,transform .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px)"><span>Choose {{ p.short }}</span><span style="display:inline-block;font-size:16px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
             </div>
           </article>
         </sc-for>
@@ -296,22 +295,23 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     </div>
   </section>
 
-  <section style="background:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:48px 96px">
       <div style="display:flex;flex-direction:column;gap:18px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Why a custom website</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05;text-wrap:balance">Collective custom websites: your brand’s gateway to digital success</h2>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.20vw,51px);line-height:1.05;text-wrap:balance">Collective custom websites: your brand’s gateway to digital success</h2>
       </div>
       <div style="display:flex;flex-direction:column;gap:24px">
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">Owning a website built for your business gives you total command over your content. Unlike social media, where character counts, shifting algorithms and content limits can hinder your message, your own website gives you freedom and flexibility. You decide everything, from the depth of your content and choice of imagery to the paths visitors take, so every element can be tailored for maximum impact.</p>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">Strategic navigation guides visitors smoothly to essential information or actions without overwhelming them, letting you present your brand’s story in its purest, most genuine form. Mastering this control ensures your website does its job, from informing visitors to converting them into sales.</p>
-        <div style="padding-top:12px"><button onClick="{{ goContact }}" style="background:#0A1628;color:#F6F1E7;border:1px solid #0A1628;padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease,transform .2s ease;display:inline-flex;align-items:center;gap:15px;animation:cmbPulse 2.4s ease-out infinite;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628;border-color:#C9A961;transform:translateY(-2px)">Let’s get started<span style="display:inline-block;font-size:18px;line-height:1;color:#C9A961;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button></div>
+        <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Owning a website built for your business gives you total command over your content. Unlike social media, where character counts, shifting algorithms and content limits can hinder your message, your own website gives you freedom and flexibility. You decide everything, from the depth of your content and choice of imagery to the paths visitors take, so every element can be tailored for maximum impact.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Strategic navigation guides visitors smoothly to essential information or actions without overwhelming them, letting you present your brand’s story in its purest, most genuine form. Mastering this control ensures your website does its job, from informing visitors to converting them into sales.</p>
+        <div style="padding-top:12px"><button onClick="{{ goContact }}" style="background:#0A1628;color:#F6F1E7;border:1px solid #0A1628;padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease,transform .2s ease;display:inline-flex;align-items:center;gap:15px;animation:cmbPulse 2.4s ease-out infinite;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628;border-color:#C9A961;transform:translateY(-2px)">Let’s get started<span style="display:inline-block;font-size:16px;line-height:1;color:#C9A961;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button></div>
       </div>
     </div>
   </section>
 </sc-if>
 
 <!-- ================= VIDEO BRANDING ================= -->
+
 <sc-if value="{{ isVideo }}" hint-placeholder-val="{{ false }}">
   <section style="position:relative;min-height:{{ heroMin }};display:flex;align-items:flex-end;color:#F6F1E7;background:#0A1628;overflow:hidden">
     <img src="assets/event-2.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
@@ -319,77 +319,153 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     {{ heroFx }}
     <div style="position:relative;width:100%;max-width:1600px;margin:0 auto;padding:120px 5vw 96px;display:flex;flex-direction:column;gap:30px">
       <div style="display:flex;align-items:center;gap:18px;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#D8BD7E"><span style="width:60px;height:1px;background:#C9A961"></span>Video Branding</div>
-      <h1 style="margin:0;max-width:1100px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(48px,5.4vw,88px);line-height:1.04;text-wrap:balance">Unveiling the power of branded videos</h1>
-      <p style="margin:0;font-size:21px;line-height:1.7;max-width:640px">Watch our branding films below, then see how we bring your brand to life on screen.</p>
+      <h1 style="margin:0;max-width:1100px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.32vw,70px);line-height:1.04;text-wrap:balance">Unveiling the power of branded videos</h1>
+      <p style="margin:0;font-size:19px;line-height:1.7;max-width:640px">Watch our branding films below, then see how we bring your brand to life on screen.</p>
     </div>
   </section>
 
-  <section style="background:#0A1628;color:#F6F1E7;padding:0 0 clamp(96px,10vw,160px)">
-    <div style="max-width:1440px;margin:0 auto;padding:0 5vw">
-      <div style="border:1px solid #C9A961;padding:15px">
-        <div style="position:relative;width:100%;aspect-ratio:16/9;background:#0F2038">
-          <iframe src="https://www.youtube.com/embed/6oTurM7gESE" title="Isole Villa" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;padding:clamp(66px,6.5vw,108px) 0">
+    {{ calmFxDark }}
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:60px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:24px 96px;align-items:end">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Featured film</span>
+          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.36vw,54px);line-height:1.05;text-wrap:balance">Isole Villa</h2>
+        </div>
+        <p style="margin:0;font-size:17px;line-height:1.85;text-wrap:pretty;color:#E7E0D2">A branding film produced by the CMB video team, from location and lighting to sound, color and the final edit.</p>
+      </div>
+      <div style="position:relative;margin:15px">
+        <span aria-hidden="true" style="position:absolute;width:54px;height:54px;top:-15px;left:-15px;border-top:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;top:-15px;right:-15px;border-top:2px solid #C9A961;border-right:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;bottom:-15px;left:-15px;border-bottom:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;bottom:-15px;right:-15px;border-bottom:2px solid #C9A961;border-right:2px solid #C9A961"></span>
+        <div style="position:relative;width:100%;aspect-ratio:16/9;background:#0F2038;box-shadow:0 50px 100px -40px rgba(0,0,0,0.9)">
+          <iframe src="https://www.youtube.com/embed/6oTurM7gESE" title="Isole Villa branding film by Collective MB" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
         </div>
       </div>
-      <div style="display:flex;justify-content:space-between;gap:12px;padding-top:24px;flex-wrap:wrap">
-        <span style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500">Isole Villa</span>
-        <span style="font-size:14px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#C9A961;align-self:center">Branding film</span>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
-    <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:48px 96px">
-      <div style="display:flex;flex-direction:column;gap:18px">
-        <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">CMB Video</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05;text-wrap:balance">Video that makes your brand memorable</h2>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:24px">
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">CMB video branding is the creation and use of an identifier, such as a logo or symbol, that helps consumers recognize your brand, whether you are a startup or an established company, and set it apart from others in your niche. Effective video branding makes you memorable, solidifies your positioning and shows prospects what to expect when they work with you.</p>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">Branding elements are the first point of contact between your prospects and your product or service. Because they appear on your website, social media posts, ads and even the product itself, they belong in your video marketing as well.</p>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">We are a small team of highly talented videographers and video editors who love what we do, with a combined 15+ years of experience and extensive backgrounds in video production. Over that time we have produced hundreds of corporate and event videos. Every project is unique, so we work closely with each client to make sure their vision is realized.</p>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">The CMB video team understands every facet of videography, from camera angles, lighting and lenses to sound and color. Each of us visualizes the final video in its entirety and contributes from our own area of expertise. Using the latest equipment, including 4K 35mm digital cinema cameras, we create powerful visual experiences at exceptional value.</p>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:#FFFFFF;padding:clamp(96px,10vw,160px) 0">
-    <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:clamp(84px,8vw,132px)">
-      <div>
-        <div style="display:flex;flex-direction:column;gap:18px;margin-bottom:48px">
-          <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Our approach</span>
-          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05">How we build your video presence</h2>
-        </div>
-        <sc-for list="{{ approach }}" as="a" hint-placeholder-count="5">
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:15px 72px;padding:39px 0;border-top:1px solid #C9A961">
-            <div style="display:flex;gap:27px;align-items:baseline"><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#8A6A2E;line-height:1;min-width:48px">{{ a.n }}</span><span style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:500;line-height:1.15">{{ a.t }}</span></div>
-            <p style="margin:0;font-size:19px;line-height:1.8">{{ a.d }}</p>
+      <div style="display:grid;grid-template-columns:{{ g3 }};border-top:1px solid #C9A961">
+        <sc-for list="{{ videoFacts }}" as="f" hint-placeholder-count="3">
+          <div style="padding:39px 30px 0 0;display:flex;flex-direction:column;gap:12px">
+            <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(42px,3.68vw,61px);line-height:1;color:#E6CD8E">{{ f.v }}</span>
+            <span style="font-size:16px;line-height:1.6;color:#E7E0D2">{{ f.l }}</span>
           </div>
         </sc-for>
-        <p style="margin:0;padding-top:39px;border-top:1px solid #C9A961;font-size:19px;line-height:1.8;max-width:900px">Choose us for a dynamic, impactful video marketing strategy that captures attention and moves your brand toward wide recognition and success.</p>
       </div>
-      <div>
-        <div style="display:flex;flex-direction:column;gap:18px;margin-bottom:48px">
-          <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Why video</span>
-          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05">Leverage CMB videos to boost brand awareness</h2>
+    </div>
+  </section>
+
+  <section style="background:#F6F1E7;display:grid;grid-template-columns:{{ gSplit }};align-items:stretch">
+    <div style="position:relative;overflow:hidden;min-height:{{ splitMin }};background:#0A1628">
+      <img src="assets/event-versace-10.jpg" alt="Luxury bridal shoot at the Versace Mansion produced by Collective MB" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%;display:block;transition:transform 1.6s cubic-bezier(.2,.6,.2,1)" style-hover="transform:scale(1.04)">
+      <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,22,40,0.85) 0%,rgba(10,22,40,0) 45%)"></div>
+      <div style="position:absolute;left:clamp(24px,4vw,60px);right:clamp(24px,4vw,60px);bottom:clamp(24px,4vw,54px);display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap;color:#F6F1E7">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#E6CD8E">On location</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:28px;line-height:1.1">Versace Mansion, Miami</span>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));gap:24px">
-          <sc-for list="{{ whyVideo }}" as="a" hint-placeholder-count="5">
-            <div style="grid-column:{{ a.span }};background:#F6F1E7;border:1px solid #E2D6BD;border-top:4px solid #C9A961;box-shadow:0 20px 44px -30px rgba(10,22,40,0.4);padding:42px 39px;display:flex;flex-direction:column;gap:18px">
-              <span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#8A6A2E;line-height:1">{{ a.n }}</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;line-height:1.15">{{ a.t }}</span>
-              <p style="margin:0;font-size:18px;line-height:1.75">{{ a.d }}</p>
-            </div>
-          </sc-for>
+        <span style="font-size:13px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#E6CD8E;border:1px solid #C9A961;padding:9px 15px">4K · 35mm cinema</span>
+      </div>
+    </div>
+    <div style="position:relative;display:flex;align-items:center;padding:clamp(60px,7vw,120px) clamp(24px,6vw,108px)">
+      <div style="position:relative;max-width:620px;display:flex;flex-direction:column;gap:27px">
+        <span style="font-size:13px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E;display:flex;align-items:center;gap:15px"><span style="width:48px;height:1px;background:#C9A961"></span>CMB Video</span>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,3.6vw,58px);line-height:1.04;text-wrap:balance">Video that makes your brand <em style="font-style:italic;color:#8A6A2E">memorable</em></h2>
+        <p style="margin:0;font-size:18px;line-height:1.85;text-wrap:pretty">CMB video branding is the creation and use of an identifier, such as a logo or symbol, that helps consumers recognize your brand, whether you are a startup or an established company, and set it apart from others in your niche. Effective video branding makes you memorable, solidifies your positioning and shows prospects what to expect when they work with you.</p>
+        <div style="position:relative;background:#0A1628;color:#F6F1E7;padding:30px 33px;border-left:4px solid #C9A961;box-shadow:0 30px 60px -34px rgba(10,22,40,0.7)">
+          <p style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;font-size:clamp(21px,1.7vw,26px);line-height:1.45">Branding elements are the first point of contact between your prospects and your product or service. Because they appear on your website, social media posts, ads and even the product itself, they belong in your video marketing as well.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(84px,8vw,132px) 0">
-    <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:36px">
-      <h2 style="margin:0;max-width:900px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.08;text-wrap:balance">Ready to tell your brand’s story on film?</h2>
-      <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Let’s get started<span style="display:inline-block;font-size:18px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
+  <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
+    <img src="assets/event-2.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0.22">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,0.96) 0%,rgba(10,22,40,0.8) 60%,rgba(10,22,40,0.92) 100%)"></div>
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:60px 108px;align-items:center">
+      <blockquote style="margin:0;display:flex;flex-direction:column;gap:30px">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:96px;line-height:0.6;color:#C9A961">“</span>
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;font-size:clamp(29px,2.72vw,45px);line-height:1.2">Each of us visualizes the final video in its entirety.</span>
+        <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">The CMB video team</span>
+      </blockquote>
+      <div style="display:flex;flex-direction:column;gap:27px">
+        <p style="margin:0;font-size:17px;line-height:1.85;text-wrap:pretty;color:#E7E0D2">We are a small team of highly talented videographers and video editors who love what we do, with a combined 15+ years of experience and extensive backgrounds in video production. Over that time we have produced hundreds of corporate and event videos. Every project is unique, so we work closely with each client to make sure their vision is realized.</p>
+        <p style="margin:0;font-size:17px;line-height:1.85;text-wrap:pretty;color:#E7E0D2">The CMB video team understands every facet of videography, from camera angles, lighting and lenses to sound and color. Using the latest equipment, including 4K 35mm digital cinema cameras, we create powerful visual experiences at exceptional value.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
+    {{ calmFxDark }}
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:54px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px 96px;align-items:end">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961;display:flex;align-items:center;gap:15px"><span style="width:48px;height:1px;background:#C9A961"></span>Our approach</span>
+          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,3.6vw,58px);line-height:1.04;text-wrap:balance">How we build your video presence</h2>
+        </div>
+        <p style="margin:0;font-size:18px;line-height:1.8;color:#E7E0D2">Five steps, from the first frame to paid distribution. Select a step to see how it works.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:{{ gApproach }};gap:30px;align-items:stretch">
+        <div role="tablist" aria-label="Approach steps" style="display:flex;flex-direction:column;border-top:1px solid rgba(201,169,97,0.45)">
+          <sc-for list="{{ approachTabs }}" as="a" hint-placeholder-count="5">
+            <button role="tab" aria-selected="{{ a.on }}" onClick="{{ a.pick }}" style="position:relative;overflow:hidden;width:100%;background:{{ a.bg }};color:{{ a.fg }};border:0;border-bottom:1px solid rgba(201,169,97,0.45);padding:24px 24px 24px 27px;cursor:pointer;display:grid;grid-template-columns:48px 1fr 24px;gap:15px;align-items:center;text-align:left;transition:background-color .35s ease,color .35s ease" style-hover="background:{{ a.hoverBg }}">
+              <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:26px;line-height:1;color:{{ a.numC }}">{{ a.n }}</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(22px,1.8vw,28px);line-height:1.15">{{ a.t }}</span>
+              <span style="font-size:18px;color:{{ a.numC }}">{{ a.arrow }}</span>
+              <span aria-hidden="true" style="position:absolute;left:0;bottom:0;height:2px;width:{{ a.bar }};background:#0A1628;transition:width {{ a.barT }} linear"></span>
+            </button>
+          </sc-for>
+        </div>
+        <div style="position:relative;overflow:hidden;min-height:480px;border:1px solid #C9A961;box-shadow:0 50px 100px -40px rgba(0,0,0,0.9)">
+          {{ approachImg }}
+          <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,22,40,0.96) 0%,rgba(10,22,40,0.7) 45%,rgba(10,22,40,0.15) 100%)"></div>
+          <div style="position:absolute;left:0;right:0;bottom:0;padding:clamp(30px,3.6vw,54px);display:flex;flex-direction:column;gap:18px;max-width:760px">
+            <span style="font-size:13px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#E6CD8E">Step {{ approachCur.n }} of 05</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,3.4vw,54px);line-height:1.05">{{ approachCur.t }}</span>
+            <span style="width:60px;height:1px;background:#C9A961"></span>
+            <p style="margin:0;font-size:clamp(17px,1.3vw,20px);line-height:1.75;color:#F1EADB">{{ approachCur.d }}</p>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:24px 48px;flex-wrap:wrap;border-top:1px solid rgba(201,169,97,0.45);padding-top:39px">
+        <p style="margin:0;max-width:820px;font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;font-size:clamp(21px,1.8vw,28px);line-height:1.4">Choose us for a dynamic, impactful video marketing strategy that captures attention and moves your brand toward wide recognition and success.</p>
+        <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:18px clamp(21px,3.4vw,42px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};justify-content:center;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px)">Plan my video<span style="display:inline-block;font-size:18px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
+    <div style="max-width:1440px;margin:0 auto;padding:0 5vw">
+      <div style="display:flex;flex-direction:column;gap:21px;align-items:center;text-align:center;margin-bottom:54px">
+        <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Why video</span>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.36vw,54px);line-height:1.05;text-wrap:balance">Leverage CMB videos to boost brand awareness</h2>
+        <span style="width:84px;height:1px;background:#C9A961"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:30px;margin-bottom:30px">
+        <div style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;padding:clamp(45px,4vw,66px);display:flex;flex-direction:column;gap:18px;box-shadow:0 40px 80px -40px rgba(10,22,40,0.7)">
+          <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Global dominance</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(67px,7.20vw,120px);line-height:0.9;color:#E6CD8E">73.7%</span>
+          <span style="font-size:17px;line-height:1.7;color:#E7E0D2">of internet traffic worldwide was video in the first half of 2023.</span>
+        </div>
+        <div style="position:relative;overflow:hidden;background:#FFFFFF;border:1px solid #C9A961;padding:clamp(45px,4vw,66px);display:flex;flex-direction:column;gap:18px;box-shadow:0 40px 80px -40px rgba(10,22,40,0.4)">
+          <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Preferred medium</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(67px,7.20vw,120px);line-height:0.9;color:#8A6A2E">2/3</span>
+          <span style="font-size:17px;line-height:1.7">of audiences prefer watching a video to reading when learning about products or services.</span>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:{{ gPill }};gap:30px">
+        <sc-for list="{{ whyRest }}" as="a" hint-placeholder-count="3">
+          <div style="border-top:4px solid #C9A961;background:#FFFFFF;padding:42px 36px;display:flex;flex-direction:column;gap:18px;box-shadow:0 24px 50px -34px rgba(10,22,40,0.45)">
+            <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:27px;line-height:1.15">{{ a.t }}</span>
+            <p style="margin:0;font-size:16px;line-height:1.75">{{ a.d }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;padding:clamp(66px,6.5vw,108px) 0">
+    {{ heroFx }}
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:36px">
+      <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Let’s create</span>
+      <h2 style="margin:0;max-width:900px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(35px,3.68vw,61px);line-height:1.05;text-wrap:balance">Ready to tell your brand’s story on film?</h2>
+      <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px)">Let’s get started<span style="display:inline-block;font-size:16px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
     </div>
   </section>
 </sc-if>
@@ -403,18 +479,18 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     <div style="position:relative;width:100%;max-width:1600px;margin:0 auto;padding:120px 5vw 96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:36px 96px;align-items:end">
       <div style="display:flex;flex-direction:column;gap:30px">
         <div style="display:flex;align-items:center;gap:18px;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#D8BD7E"><span style="width:60px;height:1px;background:#C9A961"></span>Digital Marketing</div>
-        <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(48px,5.4vw,88px);line-height:1.04;text-wrap:balance">Collective Marketing &amp; Branding</h1>
+        <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.32vw,70px);line-height:1.04;text-wrap:balance">Collective Marketing &amp; Branding</h1>
       </div>
-      <p style="margin:0;font-size:21px;line-height:1.7;text-wrap:pretty">We build brands in every dimension, marketing your business with both an online and a physical presence. We look at where culture, creativity and consumer context meet to build brand awareness and experiences that drive action and create impact for your business.</p>
+      <p style="margin:0;font-size:19px;line-height:1.7;text-wrap:pretty">We build brands in every dimension, marketing your business with both an online and a physical presence. We look at where culture, creativity and consumer context meet to build brand awareness and experiences that drive action and create impact for your business.</p>
     </div>
   </section>
 
   <section style="background:#FFFFFF;border-bottom:1px solid #E2D6BD;padding:36px 0">{{ clientMarquee }}</section>
-  <section style="background:#FFFFFF;padding:clamp(84px,8vw,132px) 0">
+  <section style="background:#FFFFFF;padding:clamp(60px,6vw,96px) 0">
     <div style="max-width:1600px;margin:0 auto;padding:0 5vw">
       <div style="display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center;margin-bottom:60px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Our clients</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05">Brands we have worked with</h2>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.20vw,51px);line-height:1.05">Brands we have worked with</h2>
       </div>
       <div style="display:grid;grid-template-columns:{{ g4 }};border-top:1px solid #E2D6BD;border-left:1px solid #E2D6BD">
         <sc-for list="{{ clients }}" as="c" hint-placeholder-count="12">
@@ -426,15 +502,15 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     </div>
   </section>
 
-  <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     {{ moneyFx }}
     <div style="position:relative;max-width:1600px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:72px">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:36px 96px">
         <div style="display:flex;flex-direction:column;gap:18px">
           <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Digital marketing expertise</span>
-          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05;text-wrap:balance">Driving ideal customers to your platforms every day</h2>
+          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.20vw,51px);line-height:1.05;text-wrap:balance">Driving ideal customers to your platforms every day</h2>
         </div>
-        <p style="margin:0;font-size:19px;line-height:1.8;color:#E7E0D2;text-wrap:pretty;align-self:end">In today’s uncertain economy, businesses must adapt their products and services to the digital landscape through online marketing. Our website engine runs on an online-verse system that overcomes algorithm keyword blocks and drives thousands of ideal customers to your platforms every day. It combines SEO, content marketing, social media lookalike audience analysis and precise targeting of your brand’s demographics, with a focus on price-point interests.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;color:#E7E0D2;text-wrap:pretty;align-self:end">In today’s uncertain economy, businesses must adapt their products and services to the digital landscape through online marketing. Our website engine runs on an online-verse system that overcomes algorithm keyword blocks and drives thousands of ideal customers to your platforms every day. It combines SEO, content marketing, social media lookalike audience analysis and precise targeting of your brand’s demographics, with a focus on price-point interests.</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:30px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Success stories</span>
@@ -442,9 +518,9 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
           <sc-for list="{{ stories }}" as="s" hint-placeholder-count="5">
             <div style="grid-column:{{ s.span }};background:linear-gradient(160deg,#13284A 0%,#0F2038 60%);border:1px solid #2A3D5A;border-top:4px solid #C9A961;box-shadow:0 30px 60px -30px rgba(0,0,0,0.7);padding:45px 42px;display:flex;flex-direction:column;gap:18px">
               <span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9A961">{{ s.n }}</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(56px,5vw,76px);font-weight:500;line-height:1;color:#D8BD7E">{{ s.stat }}</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;line-height:1.15">{{ s.t }}</span>
-              <p style="margin:0;font-size:18px;line-height:1.75;color:#E7E0D2">{{ s.d }}</p>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(45px,4.00vw,61px);font-weight:500;line-height:1;color:#D8BD7E">{{ s.stat }}</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;line-height:1.15">{{ s.t }}</span>
+              <p style="margin:0;font-size:16px;line-height:1.75;color:#E7E0D2">{{ s.d }}</p>
             </div>
           </sc-for>
         </div>
@@ -452,29 +528,38 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     </div>
   </section>
 
-  <section style="background:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
-    <div style="max-width:1440px;margin:0 auto;padding:0 5vw">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:36px 96px;margin-bottom:60px">
-        <div style="display:flex;flex-direction:column;gap:18px">
-          <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Traditional marketing</span>
-          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05;text-wrap:balance">Traditional marketing still matters in the digital age</h2>
-        </div>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty;align-self:end">At CMB, our approach to physical marketing and branding revolves around visuals that align with your brand’s identity, message and target audience. We tell compelling stories through images that evoke emotion and capture attention, creating meaningful consumer engagement. Whether it is product photography and video or lifestyle imagery, these visuals shape how your brand is perceived and remembered.</p>
+  <section style="position:relative;overflow:hidden;background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
+    {{ calmFx }}
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:84px">
+      <div style="display:flex;flex-direction:column;gap:21px;align-items:center;text-align:center">
+        <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Traditional marketing</span>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.36vw,54px);line-height:1.05;text-wrap:balance;max-width:1000px">Traditional marketing still matters in the digital age</h2>
+        <span style="width:84px;height:1px;background:#C9A961"></span>
+        <p style="margin:0;font-size:17px;line-height:1.85;text-wrap:pretty;max-width:900px">At CMB, our approach to physical marketing and branding revolves around visuals that align with your brand’s identity, message and target audience. We tell compelling stories through images that evoke emotion and capture attention. Whether it is product photography and video or lifestyle imagery, these visuals shape how your brand is perceived and remembered.</p>
       </div>
-      <span style="display:block;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E;margin-bottom:24px">Key elements</span>
-      <sc-for list="{{ elements }}" as="e" hint-placeholder-count="5">
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:15px 72px;padding:39px 0;border-top:1px solid #C9A961">
-          <div style="display:flex;gap:27px;align-items:baseline"><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#8A6A2E;line-height:1;min-width:48px">{{ e.n }}</span><span style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:500;line-height:1.15">{{ e.t }}</span></div>
-          <p style="margin:0;font-size:19px;line-height:1.8">{{ e.d }}</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:60px 96px;align-items:center">
+        <div style="position:relative;margin:15px">
+          <span aria-hidden="true" style="position:absolute;width:54px;height:54px;top:-15px;left:-15px;border-top:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;top:-15px;right:-15px;border-top:2px solid #C9A961;border-right:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;bottom:-15px;left:-15px;border-bottom:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;bottom:-15px;right:-15px;border-bottom:2px solid #C9A961;border-right:2px solid #C9A961"></span>
+          <div style="position:relative;overflow:hidden;box-shadow:0 40px 80px -40px rgba(10,22,40,0.6)"><img src="assets/event-2.jpg" alt="Event photography and videography by Collective MB" style="width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.6,.2,1)" style-hover="transform:scale(1.05)"></div>
+          <div style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(0deg,rgba(10,22,40,0.92),rgba(10,22,40,0));color:#F6F1E7;padding:60px 30px 27px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#E6CD8E">Photo · Video · Print</span></div>
         </div>
-      </sc-for>
+        <div style="display:flex;flex-direction:column">
+          <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E;margin-bottom:18px">Key elements</span>
+          <sc-for list="{{ elements }}" as="e" hint-placeholder-count="5">
+            <div style="display:grid;grid-template-columns:42px 1fr;gap:21px;padding:27px 0;border-top:1px solid #C9A961">
+              <span style="width:12px;height:12px;background:#C9A961;transform:rotate(45deg);margin:15px 0 0 6px"></span>
+              <div style="display:flex;flex-direction:column;gap:9px"><span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:27px;line-height:1.15">{{ e.t }}</span><span style="font-size:16px;line-height:1.75">{{ e.d }}</span></div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(84px,8vw,132px) 0">
+  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(60px,6vw,96px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:36px">
-      <h2 style="margin:0;max-width:1000px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,3.4vw,54px);line-height:1.15;text-wrap:balance">As the digital age evolves, we stay a step ahead, delivering growth and the highest-quality service to our valued clients.</h2>
-      <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Click to get started<span style="display:inline-block;font-size:18px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
+      <h2 style="margin:0;max-width:1000px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(27px,2.72vw,43px);line-height:1.15;text-wrap:balance">As the digital age evolves, we stay a step ahead, delivering growth and the highest-quality service to our valued clients.</h2>
+      <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Click to get started<span style="display:inline-block;font-size:16px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
     </div>
   </section>
 </sc-if>
@@ -487,190 +572,202 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
     {{ heroFx }}
     <div style="position:relative;width:100%;max-width:1600px;margin:0 auto;padding:120px 5vw 72px;display:flex;flex-direction:column;gap:30px">
       <div style="display:flex;align-items:center;gap:18px;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#D8BD7E"><span style="width:60px;height:1px;background:#C9A961"></span>Presented by Collective Luxury Events</div>
-      <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(56px,7vw,120px);line-height:1;text-wrap:balance">Luxury Branding Events</h1>
+      <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(45px,5.60vw,96px);line-height:1;text-wrap:balance">Luxury Branding Events</h1>
       <div style="display:grid;grid-template-columns:{{ g4 }};gap:0 36px;margin-top:36px">
         <sc-for list="{{ eventFacts }}" as="f" hint-placeholder-count="4">
           <div style="border-top:1px solid #C9A961;padding:24px 0;display:flex;flex-direction:column;gap:9px">
             <span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9A961">{{ f.q }}</span>
-            <span style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;line-height:1.15">{{ f.a }}</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;line-height:1.15">{{ f.a }}</span>
           </div>
         </sc-for>
       </div>
     </div>
   </section>
 
-  <section style="background:#FFFFFF;padding:clamp(84px,8vw,132px) 0">
-    <div style="max-width:1600px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:54px">
-      <div style="display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center">
-        <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">In the press</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05">Featured by leading wedding publications</h2>
+  <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0 0">
+    {{ calmFxDark }}
+    <div style="position:relative;max-width:1500px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:60px 96px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:27px">
+        <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">In the press</span>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.36vw,54px);line-height:1.05;text-wrap:balance">Featured by leading wedding publications</h2>
+        <span style="width:84px;height:1px;background:#C9A961"></span>
+        <p style="margin:0;font-size:17px;line-height:1.85;text-wrap:pretty;color:#E7E0D2">Photos from our Luxury Branding Events are submitted for publication in magazines such as Grace Ormonde, Martha Stewart Weddings and Wedding Style, giving vendors press-ready exposure.</p>
       </div>
-      <img src="assets/event-press.jpg" alt="Press features in Town &amp; Country, Brides, New York Magazine, Perfête, Brooklyn Bride and more" style="width:100%;height:auto;display:block">
-      <div style="border-top:1px solid #E2D6BD;border-bottom:1px solid #E2D6BD;padding:30px 0;margin:0 -5vw">{{ pressMarquee }}</div>
+      <div style="position:relative;margin:15px">
+        <span aria-hidden="true" style="position:absolute;width:54px;height:54px;top:-15px;left:-15px;border-top:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;top:-15px;right:-15px;border-top:2px solid #C9A961;border-right:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;bottom:-15px;left:-15px;border-bottom:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:54px;height:54px;bottom:-15px;right:-15px;border-bottom:2px solid #C9A961;border-right:2px solid #C9A961"></span>
+        <img src="assets/event-press.jpg" alt="Press features in Town &amp; Country, Brides, New York Magazine, Perfête, Brooklyn Bride and more" style="width:100%;height:auto;display:block;box-shadow:0 50px 100px -40px rgba(0,0,0,0.9)">
+      </div>
     </div>
+    <div style="position:relative;margin-top:clamp(60px,6vw,96px);background:#FFFFFF;padding:33px 0">{{ pressMarquee }}</div>
   </section>
 
-  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:72px">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:36px 96px;align-items:end">
         <div style="display:flex;flex-direction:column;gap:18px">
           <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Who it’s for</span>
-          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(48px,5vw,84px);line-height:1">Created for</h2>
+          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(38px,4.00vw,67px);line-height:1">Created for</h2>
         </div>
-        <p style="margin:0;font-size:19px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">This luxury branding event is known for unparalleled experiences, and our team has become synonymous with luxury event planning. We continue to raise event standards, creating moments that stay with attendees long after the final curtain falls.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">This luxury branding event is known for unparalleled experiences, and our team has become synonymous with luxury event planning. We continue to raise event standards, creating moments that stay with attendees long after the final curtain falls.</p>
       </div>
       <div style="display:grid;grid-template-columns:{{ g4 }};border-top:1px solid #C9A961;border-left:1px solid rgba(201,169,97,0.35)">
         <sc-for list="{{ createdFor }}" as="c" hint-placeholder-count="12">
           <div style="padding:33px 30px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;border-right:1px solid rgba(201,169,97,0.35);border-bottom:1px solid rgba(201,169,97,0.35);transition:background-color .2s ease" style-hover="background:#0F2038">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#C9A961;line-height:1">{{ c.n }}</span>
-            <span style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;line-height:1.1">{{ c.t }}</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#C9A961;line-height:1">{{ c.n }}</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;line-height:1.1">{{ c.t }}</span>
           </div>
         </sc-for>
       </div>
     </div>
   </section>
 
-  <section style="background:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:54px 96px;align-items:center">
       <div style="position:relative;padding:0 30px 30px 0">
         <img src="assets/event-versace-9.jpg" alt="" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;display:block">
         <div style="position:absolute;right:0;bottom:0;width:62%;background:#0A1628;color:#F6F1E7;border:1px solid #C9A961;padding:30px 33px;display:flex;flex-direction:column;gap:9px">
           <span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9A961">Past venues</span>
-          <span style="font-family:'Cormorant Garamond',serif;font-size:26px;line-height:1.25">Four Seasons · Versace Mansion · Biltmore · Madame Rêve Paris</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.25">Four Seasons · Versace Mansion · Biltmore · Madame Rêve Paris</span>
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:24px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Become a luxury brand</span>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">We guide emerging brands to join the event as vendors and build effective strategies that appeal to each venue’s wedding and bar mitzvah audience. When customers value exclusivity, quality and status, the luxury market defines who they hire.</p>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">Whether you want to attract more ideal clients and high-value peers, raise social awareness or simply get started, this event is for you. The objective is for your business to become a luxury brand by showcasing your best work at stunning global venues while building your network with elite peers. Meanwhile, our photographers and videographers capture the essence of your brand.</p>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">Becoming a luxury brand, whether you are an event planner, gown designer, decorator, photographer, videographer, entertainer, jeweler, florist or beauty artist, is for those who offer products and services defined by rarity, uniqueness, excellence and premium pricing. Your business becomes a status symbol, sought after by high-net-worth individuals and aspirational consumers.</p>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">Collective has a well-defined identity, with strong connections and a reputation built on past luxury events at the Four Seasons Hotel, Versace Mansion, Biltmore Hotel, Paris Hotel Madame Rêve, Banyan Airport and Isole Villa Orlando. We have created luxury productions with many brands, delivering local and global results for their businesses.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">We guide emerging brands to join the event as vendors and build effective strategies that appeal to each venue’s wedding and bar mitzvah audience. When customers value exclusivity, quality and status, the luxury market defines who they hire.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Whether you want to attract more ideal clients and high-value peers, raise social awareness or simply get started, this event is for you. The objective is for your business to become a luxury brand by showcasing your best work at stunning global venues while building your network with elite peers. Meanwhile, our photographers and videographers capture the essence of your brand.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Becoming a luxury brand, whether you are an event planner, gown designer, decorator, photographer, videographer, entertainer, jeweler, florist or beauty artist, is for those who offer products and services defined by rarity, uniqueness, excellence and premium pricing. Your business becomes a status symbol, sought after by high-net-worth individuals and aspirational consumers.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Collective has a well-defined identity, with strong connections and a reputation built on past luxury events at the Four Seasons Hotel, Versace Mansion, Biltmore Hotel, Paris Hotel Madame Rêve, Banyan Airport and Isole Villa Orlando. We have created luxury productions with many brands, delivering local and global results for their businesses.</p>
       </div>
     </div>
   </section>
 
-  <section style="position:relative;background:#0A1628;color:#F6F1E7;overflow:hidden">
+  <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7">
     <img src="assets/event-2.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
-    <div style="position:absolute;inset:0;background:rgba(10,22,40,0.82)"></div>
-    <div style="position:relative;max-width:1440px;margin:0 auto;padding:clamp(108px,11vw,180px) 5vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:30px">
-      <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Event branding</span>
-      <h2 style="margin:0;max-width:1150px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(44px,4.8vw,80px);line-height:1.04;text-wrap:balance">What makes the Collective Luxury Branding Event a must-attend experience?</h2>
-      <span style="width:84px;height:1px;background:#C9A961"></span>
-      <p style="margin:0;max-width:860px;font-size:21px;line-height:1.75;text-wrap:pretty">If you are not ready to triple your marketing budget or hire a celebrity influencer, Collective Event Branding is an intelligent way to differentiate yourself and grow into the luxury market, while making a lasting impression on elite global venue executives and top-tier peers.</p>
-      <div style="padding-top:12px"><button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:22px clamp(24px,4vw,42px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Request press kit &amp; pricing<span style="display:inline-block;font-size:18px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,22,40,0.95) 0%,rgba(10,22,40,0.82) 55%,rgba(10,22,40,0.6) 100%)"></div>
+    {{ heroFx }}
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:clamp(84px,8vw,140px) 5vw">
+      <div style="position:relative;max-width:900px;padding:clamp(39px,4vw,66px);border:1px solid rgba(201,169,97,0.5);background:rgba(10,22,40,0.55);display:flex;flex-direction:column;gap:27px">
+        <span aria-hidden="true" style="position:absolute;width:42px;height:42px;top:-9px;left:-9px;border-top:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:42px;height:42px;top:-9px;right:-9px;border-top:2px solid #C9A961;border-right:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:42px;height:42px;bottom:-9px;left:-9px;border-bottom:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:42px;height:42px;bottom:-9px;right:-9px;border-bottom:2px solid #C9A961;border-right:2px solid #C9A961"></span>
+        <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Event branding</span>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,3.52vw,59px);line-height:1.04;text-wrap:balance">What makes the Collective Luxury Branding Event a must-attend experience?</h2>
+        <span style="width:84px;height:1px;background:#C9A961"></span>
+        <p style="margin:0;font-size:18px;line-height:1.8;color:#E7E0D2;text-wrap:pretty">If you are not ready to triple your marketing budget or hire a celebrity influencer, Collective Event Branding is an intelligent way to differentiate yourself and grow into the luxury market, while making a lasting impression on elite global venue executives and top-tier peers.</p>
+        <div style="padding-top:9px"><button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px)">Request press kit &amp; pricing<span style="display:inline-block;font-size:16px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button></div>
+      </div>
     </div>
   </section>
 
-  <section style="background:#FFFFFF;padding:clamp(96px,10vw,160px) 0">
-    <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:72px">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
+  <section style="position:relative;overflow:hidden;background:#FFFFFF;padding:clamp(72px,7vw,120px) 0">
+    {{ calmFx }}
+    <div style="position:relative;max-width:1500px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;gap:96px">
+      <div style="display:grid;grid-template-columns:{{ gPill }};gap:0">
         <sc-for list="{{ mustAttend }}" as="m" hint-placeholder-count="3">
-          <div style="background:#F6F1E7;border:1px solid #E2D6BD;border-top:4px solid #C9A961;padding:42px 36px;display:flex;flex-direction:column;gap:18px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:#8A6A2E;line-height:1">{{ m.n }}</span>
-            <span style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;line-height:1.1">{{ m.t }}</span>
-            <p style="margin:0;font-size:18px;line-height:1.75">{{ m.d }}</p>
+          <div style="padding:9px clamp(24px,3.4vw,57px) 39px;border-left:{{ m.bl }};display:flex;flex-direction:column;gap:24px;align-items:flex-start">
+            <span style="width:54px;height:54px;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center"><span style="width:12px;height:12px;background:#C9A961;transform:rotate(45deg)"></span></span>
+            <span style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(27px,2.08vw,34px);line-height:1.1">{{ m.t }}</span>
+            <p style="margin:0;font-size:17px;line-height:1.85">{{ m.d }}</p>
           </div>
         </sc-for>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:36px 96px;align-items:center">
-        <blockquote style="margin:0;padding:0 0 0 36px;border-left:1px solid #C9A961;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(32px,3vw,46px);line-height:1.25">Like the features of a distinctive face, the more recognizable your brand, the more memorable you are.</blockquote>
+      <div style="position:relative;background:#F6F1E7;border:1px solid #E2D6BD;padding:clamp(48px,5vw,84px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px 96px;align-items:center">
+        <span aria-hidden="true" style="position:absolute;width:42px;height:42px;top:-1px;left:-1px;border-top:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:42px;height:42px;top:-1px;right:-1px;border-top:2px solid #C9A961;border-right:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:42px;height:42px;bottom:-1px;left:-1px;border-bottom:2px solid #C9A961;border-left:2px solid #C9A961"></span><span aria-hidden="true" style="position:absolute;width:42px;height:42px;bottom:-1px;right:-1px;border-bottom:2px solid #C9A961;border-right:2px solid #C9A961"></span>
+        <blockquote style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-style:italic;font-size:clamp(26px,2.40vw,38px);line-height:1.25">“Like the features of a distinctive face, the more recognizable your brand, the more memorable you are.”</blockquote>
         <div style="display:flex;flex-direction:column;gap:24px">
-          <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">With striking images and storytelling videos, you can expect a dramatic increase in business, stronger engagement and a better overall experience for your brand, products and services. You also receive all photos and videos taken at the event for your ongoing marketing.</p>
-          <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">That is why our Luxury Branding Events are about more than a logo or a catchy tagline. Your brand is the sum of all its elements.</p>
+          <p style="margin:0;font-size:17px;line-height:1.85;text-wrap:pretty">With striking images and storytelling videos, you can expect a dramatic increase in business, stronger engagement and a better overall experience for your brand, products and services. You also receive all photos and videos taken at the event for your ongoing marketing.</p>
+          <p style="margin:0;font-size:17px;line-height:1.85;text-wrap:pretty">That is why our Luxury Branding Events are about more than a logo or a catchy tagline. Your brand is the sum of all its elements.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:54px 96px">
       <div style="display:flex;flex-direction:column;gap:24px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Luxury Branding Event benefits</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05;text-wrap:balance">Global vendors, influencers, Virgin Hotels elite, magazines and more</h2>
-        <p style="margin:0;font-size:19px;line-height:1.8;color:#E7E0D2">We begin with a spectacular cocktail party, a chance to connect with catering directors, grow your network with new luxury brands and establish your business with influencers, celebrities and wedding publications.</p>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.20vw,51px);line-height:1.05;text-wrap:balance">Global vendors, influencers, Virgin Hotels elite, magazines and more</h2>
+        <p style="margin:0;font-size:17px;line-height:1.8;color:#E7E0D2">We begin with a spectacular cocktail party, a chance to connect with catering directors, grow your network with new luxury brands and establish your business with influencers, celebrities and wedding publications.</p>
         <div style="border:1px solid #C9A961;padding:12px;margin-top:12px"><img src="assets/event-1.png" alt="" style="width:100%;aspect-ratio:3/2;object-fit:cover;display:block"></div>
       </div>
       <ul style="margin:0;padding:0;list-style:none;align-self:start">
         <sc-for list="{{ benefits }}" as="b" hint-placeholder-count="8">
-          <li style="padding:27px 0;border-top:1px solid rgba(201,169,97,0.5);display:grid;grid-template-columns:60px 1fr;gap:18px;font-size:19px;line-height:1.65"><span style="font-family:'Cormorant Garamond',serif;font-size:30px;color:#C9A961;line-height:1">{{ b.n }}</span>{{ b.t }}</li>
+          <li style="padding:27px 0;border-top:1px solid rgba(201,169,97,0.5);display:grid;grid-template-columns:60px 1fr;gap:18px;font-size:17px;line-height:1.65"><span style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#C9A961;line-height:1">{{ b.n }}</span>{{ b.t }}</li>
         </sc-for>
       </ul>
     </div>
   </section>
 
-  <section style="background:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:54px 96px;align-items:center">
       <div style="border:1px solid #C9A961;padding:12px"><img src="assets/event-2.jpg" alt="" style="width:100%;aspect-ratio:3/2;object-fit:cover;display:block"></div>
       <div style="display:flex;flex-direction:column;gap:24px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Day of the event</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05">The Luxury Branding Event comes alive</h2>
-        <p style="margin:0;font-size:19px;line-height:1.8;text-wrap:pretty">Guests have full access to the ballrooms and rooftop areas. Showcases feature top wedding and mitzvah planners, lavish florals, elegantly decorated reception tables, stunning bridal gowns, jewelry, decadent table décor, invitations, entertainment, accessories, cake designers, beauty artists and top models, along with photographers and videographers.</p>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.20vw,51px);line-height:1.05">The Luxury Branding Event comes alive</h2>
+        <p style="margin:0;font-size:17px;line-height:1.8;text-wrap:pretty">Guests have full access to the ballrooms and rooftop areas. Showcases feature top wedding and mitzvah planners, lavish florals, elegantly decorated reception tables, stunning bridal gowns, jewelry, decadent table décor, invitations, entertainment, accessories, cake designers, beauty artists and top models, along with photographers and videographers.</p>
       </div>
     </div>
   </section>
 
-  <section style="position:relative;background:#0A1628;color:#F6F1E7;padding:clamp(108px,11vw,180px) 0;overflow:hidden">
+  <section style="position:relative;background:#0A1628;color:#F6F1E7;padding:clamp(72px,7vw,120px) 0;overflow:hidden">
     <img src="assets/event-1.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,40,0.92),rgba(10,22,40,0.8) 40%,rgba(10,22,40,0.95))"></div>
     {{ moneyFx }}
     <div style="position:relative;max-width:1440px;margin:0 auto;padding:0 5vw">
-      <div style="display:flex;flex-direction:column;gap:24px;align-items:center;text-align:center;margin-bottom:84px">
+      <div style="display:flex;flex-direction:column;gap:24px;align-items:center;text-align:center;margin-bottom:60px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#C9A961">Your brand’s investment</span>
-        <h2 style="margin:0;max-width:1000px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(44px,4.8vw,80px);line-height:1.04;text-wrap:balance">Value of the Luxury Branding Event experience</h2>
+        <h2 style="margin:0;max-width:1000px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(35px,3.84vw,64px);line-height:1.04;text-wrap:balance">Value of the Luxury Branding Event experience</h2>
         <span style="width:84px;height:1px;background:#C9A961"></span>
-        <p style="margin:0;font-size:19px;line-height:1.8;max-width:860px;color:#E7E0D2">We work with both emerging and established businesses, so we understand the importance of marketing costs. As an all-inclusive luxury branding firm specializing in venue exposure and brand development, we have calculated the starting rates for a Luxury Branding Event experience.</p>
+        <p style="margin:0;font-size:17px;line-height:1.8;max-width:860px;color:#E7E0D2">We work with both emerging and established businesses, so we understand the importance of marketing costs. As an all-inclusive luxury branding firm specializing in venue exposure and brand development, we have calculated the starting rates for a Luxury Branding Event experience.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:30px;align-items:stretch">
         <article style="background:#F6F1E7;color:#0A1628;border:1px solid #E2D6BD;padding:54px 48px;display:flex;flex-direction:column;gap:30px">
           <div style="display:flex;flex-direction:column;gap:12px">
             <span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#8A6A2E">Do it yourself: simply too expensive</span>
-            <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:40px;line-height:1.1">DIY luxury branding</h3>
+            <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:32px;line-height:1.1">DIY luxury branding</h3>
           </div>
           <div style="border-top:1px solid #C9A961">
             <sc-for list="{{ diy }}" as="r" hint-placeholder-count="7">
-              <div style="display:flex;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:1px solid #E2D6BD;font-size:18px"><span>{{ r.k }}</span><span style="font-weight:600">{{ r.v }}</span></div>
+              <div style="display:flex;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:1px solid #E2D6BD;font-size:16px"><span>{{ r.k }}</span><span style="font-weight:600">{{ r.v }}</span></div>
             </sc-for>
           </div>
-          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:auto"><span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase">Total budget starting at</span><span style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:500;line-height:1">$96,000</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:auto"><span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase">Total budget starting at</span><span style="font-family:'Cormorant Garamond',serif;font-size:45px;font-weight:500;line-height:1">$96,000</span></div>
         </article>
         <article style="position:relative;background:#0F2038;color:#F6F1E7;border:1px solid #C9A961;border-top:6px solid #C9A961;padding:54px 48px;display:flex;flex-direction:column;gap:30px">
           <span style="position:absolute;top:-21px;right:36px;background:#C9A961;color:#0A1628;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;padding:9px 15px">Recommended</span>
           <div style="display:flex;flex-direction:column;gap:12px">
             <span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9A961">Collective MB: all included</span>
-            <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:40px;line-height:1.1">Luxury Branding Event collaborative</h3>
+            <h3 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:32px;line-height:1.1">Luxury Branding Event collaborative</h3>
           </div>
           <div style="border-top:1px solid #C9A961">
             <sc-for list="{{ diy }}" as="r" hint-placeholder-count="7">
-              <div style="display:flex;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:1px solid #24364F;font-size:18px"><span>{{ r.k }}</span><span style="font-weight:600;color:#D8BD7E">✓ Included</span></div>
+              <div style="display:flex;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:1px solid #24364F;font-size:16px"><span>{{ r.k }}</span><span style="font-weight:600;color:#D8BD7E">✓ Included</span></div>
             </sc-for>
           </div>
-          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:auto"><span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9A961">Your investment</span><span style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;line-height:1.1;color:#D8BD7E">Only 5% to 10% of the DIY cost</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:auto"><span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9A961">Your investment</span><span style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;line-height:1.1;color:#D8BD7E">Only 5% to 10% of the DIY cost</span></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section style="background:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section style="background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw">
       <div style="display:flex;flex-direction:column;gap:18px;margin-bottom:54px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">Portfolio</span>
-        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1.05">Past luxury events</h2>
+        <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.20vw,51px);line-height:1.05">Past luxury events</h2>
       </div>
       <div style="display:grid;grid-template-columns:{{ g3 }};gap:0 48px">
         <sc-for list="{{ portfolio }}" as="p" hint-placeholder-count="6">
           <div style="display:flex;gap:27px;align-items:baseline;padding:33px 0;border-top:1px solid #C9A961">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:30px;color:#8A6A2E;line-height:1">{{ p.n }}</span>
-            <span style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;line-height:1.1">{{ p.name }}</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#8A6A2E;line-height:1">{{ p.n }}</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;line-height:1.1">{{ p.name }}</span>
           </div>
         </sc-for>
       </div>
     </div>
   </section>
 
-  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(84px,8vw,132px) 0">
+  <section style="background:#0A1628;color:#F6F1E7;padding:clamp(60px,6vw,96px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:flex;flex-direction:column;align-items:center;text-align:center;gap:36px">
-      <h2 style="margin:0;max-width:1000px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(36px,3.6vw,58px);line-height:1.12;text-wrap:balance">Tell us about your business and we will send you a press kit with pricing.</h2>
-      <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Click to get started<span style="display:inline-block;font-size:18px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
+      <h2 style="margin:0;max-width:1000px;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(29px,2.88vw,46px);line-height:1.12;text-wrap:balance">Tell us about your business and we will send you a press kit with pricing.</h2>
+      <button onClick="{{ goContact }}" style="background:linear-gradient(120deg,#A9864A 0%,#E6CD8E 35%,#C9A961 55%,#F1DDA6 75%,#A9864A 100%);background-size:200% 100%;color:#0A1628;border:1px solid #C9A961;box-shadow:0 14px 34px -14px rgba(201,169,97,0.75);padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease;animation:cmbShine 6s linear infinite,cmbPulse 2.4s ease-out infinite;display:inline-flex;align-items:center;gap:15px;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="filter:brightness(1.12);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(201,169,97,0.9)">Click to get started<span style="display:inline-block;font-size:16px;line-height:1;animation:cmbNudge 1.6s ease-in-out infinite">→</span></button>
     </div>
   </section>
 </sc-if>
@@ -679,26 +776,26 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
 <sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
   <section style="position:relative;overflow:hidden;background:#0A1628;color:#F6F1E7;min-height:{{ heroMin }}">
     {{ heroFx }}
-    <div style="position:relative;max-width:1600px;margin:0 auto;padding:clamp(84px,8vw,132px) 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:72px 96px;align-items:start">
+    <div style="position:relative;max-width:1600px;margin:0 auto;padding:clamp(60px,6vw,96px) 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:72px 96px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:30px">
         <div style="display:flex;align-items:center;gap:18px;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#D8BD7E"><span style="width:60px;height:1px;background:#C9A961"></span>Contact</div>
-        <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(52px,5.6vw,92px);line-height:1.02">Let’s start with a hello.</h1>
-        <p style="margin:0;font-size:21px;line-height:1.7">Get in touch with the Collective team.</p>
+        <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(42px,4.48vw,74px);line-height:1.02">Let’s start with a hello.</h1>
+        <p style="margin:0;font-size:19px;line-height:1.7">Get in touch with the Collective team.</p>
         <div style="display:flex;flex-direction:column;margin-top:18px">
           <div style="padding:30px 0;border-top:1px solid #C9A961;display:flex;flex-direction:column;gap:12px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500">Websites, marketing &amp; video</span>
-            <span style="font-size:18px;line-height:1.75;color:#E7E0D2">For A.I. website development, SEO, digital marketing, social media marketing or video branding, please share your business information.</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500">Websites, marketing &amp; video</span>
+            <span style="font-size:16px;line-height:1.75;color:#E7E0D2">For A.I. website development, SEO, digital marketing, social media marketing or video branding, please share your business information.</span>
           </div>
           <div style="padding:30px 0;border-top:1px solid #C9A961;border-bottom:1px solid #C9A961;display:flex;flex-direction:column;gap:12px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500">Luxury Branding Events</span>
-            <span style="font-size:18px;line-height:1.75;color:#E7E0D2">To learn more about our next Luxury Branding Event, share your business information and we will email you the vendor press kit on how to get started.</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500">Luxury Branding Events</span>
+            <span style="font-size:16px;line-height:1.75;color:#E7E0D2">To learn more about our next Luxury Branding Event, share your business information and we will email you the vendor press kit on how to get started.</span>
           </div>
         </div>
       </div>
       <div style="background:#F6F1E7;color:#0A1628;padding:clamp(36px,4vw,60px);display:flex;flex-direction:column;gap:36px">
         <div style="display:flex;flex-direction:column;gap:12px">
           <span style="font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#8A6A2E">Real business solutions</span>
-          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:44px;line-height:1.05">How can we help?</h2>
+          <h2 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:35px;line-height:1.05">How can we help?</h2>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:9px">
           <sc-for list="{{ topics }}" as="t" hint-placeholder-count="3">
@@ -707,44 +804,44 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
         </div>
         <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
           <div style="border-top:1px solid #C9A961;padding-top:30px;display:flex;flex-direction:column;gap:12px">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500">Thank you. Your message has been sent.</span>
-            <span style="font-size:18px;line-height:1.7">A member of the Collective team will reply by email shortly.</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:31px;font-weight:500">Thank you. Your message has been sent.</span>
+            <span style="font-size:16px;line-height:1.7">A member of the Collective team will reply by email shortly.</span>
           </div>
         </sc-if>
         <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
           <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:27px">
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:27px">
-              <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">First name *</span><input required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:18px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
-              <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Last name *</span><input required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:18px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
+              <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">First name *</span><input required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:16px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
+              <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Last name *</span><input required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:16px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
             </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:27px">
-              <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Email *</span><input type="email" required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:18px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
-              <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Confirm email *</span><input type="email" required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:18px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
+              <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Email *</span><input type="email" required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:16px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
+              <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Confirm email *</span><input type="email" required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:16px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
             </div>
-            <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Phone number *</span><input type="tel" required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:18px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
-            <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">How can we help you?</span><textarea rows="5" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:18px;padding:16px 18px;outline:none;resize:vertical" style-focus="border-color:#0A1628"></textarea></label>
-            <button type="submit" style="background:#0A1628;color:#F6F1E7;border:1px solid #0A1628;padding:22px clamp(24px,4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628;border-color:#C9A961">Submit</button>
+            <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">Phone number *</span><input type="tel" required="" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:16px;padding:16px 18px;outline:none" style-focus="border-color:#0A1628"></label>
+            <label style="display:flex;flex-direction:column;gap:9px"><span style="font-size:13px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase">How can we help you?</span><textarea rows="5" style="background:#FFFFFF;border:1px solid #D8CBAE;color:#0A1628;font-family:Montserrat,sans-serif;font-size:16px;padding:16px 18px;outline:none;resize:vertical" style-focus="border-color:#0A1628"></textarea></label>
+            <button type="submit" style="background:#0A1628;color:#F6F1E7;border:1px solid #0A1628;padding:18px clamp(21px,3.4vw,48px);cursor:pointer;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;transition:background-color .2s ease,color .2s ease;white-space:{{ btnWs }};text-align:center;justify-content:center;flex:0 1 auto;max-width:100%" style-hover="background:#C9A961;color:#0A1628;border-color:#C9A961">Submit</button>
           </form>
         </sc-if>
       </div>
     </div>
   </section>
-  <section aria-labelledby="faq-title" style="background:#F6F1E7;padding:clamp(96px,10vw,160px) 0">
+  <section aria-labelledby="faq-title" style="background:#F6F1E7;padding:clamp(72px,7vw,120px) 0">
     <div style="max-width:1440px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:54px 96px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:18px">
         <span style="font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#8A6A2E">FAQ</span>
-        <h2 id="faq-title" style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,4.2vw,68px);line-height:1.05">Frequently asked questions</h2>
-        <p style="margin:0;font-size:19px;line-height:1.8">Websites, pricing, video and Luxury Branding Events, answered.</p>
+        <h2 id="faq-title" style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,3.36vw,54px);line-height:1.05">Frequently asked questions</h2>
+        <p style="margin:0;font-size:17px;line-height:1.8">Websites, pricing, video and Luxury Branding Events, answered.</p>
       </div>
       <div style="border-top:1px solid #C9A961">
         <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
           <div style="border-bottom:1px solid #C9A961">
-            <button onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;background:none;border:0;padding:27px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;text-align:left;color:#0A1628;font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2vw,30px);font-weight:500;line-height:1.25;transition:color .2s ease" style-hover="color:#8A6A2E">
+            <button onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;background:none;border:0;padding:27px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;text-align:left;color:#0A1628;font-family:'Cormorant Garamond',serif;font-size:clamp(19px,1.60vw,24px);font-weight:500;line-height:1.25;transition:color .2s ease" style-hover="color:#8A6A2E">
               <span style="flex:1;min-width:0">{{ f.q }}</span>
-              <span style="flex:none;width:42px;height:42px;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center;font-family:Montserrat,sans-serif;font-size:20px;background:{{ f.iconBg }};color:{{ f.iconFg }};transition:background-color .2s ease">{{ f.icon }}</span>
+              <span style="flex:none;width:42px;height:42px;border:1px solid #C9A961;display:flex;align-items:center;justify-content:center;font-family:Montserrat,sans-serif;font-size:18px;background:{{ f.iconBg }};color:{{ f.iconFg }};transition:background-color .2s ease">{{ f.icon }}</span>
             </button>
             <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
-              <p style="margin:0;padding:0 66px 30px 0;font-size:18px;line-height:1.8">{{ f.a }}</p>
+              <p style="margin:0;padding:0 66px 30px 0;font-size:16px;line-height:1.8">{{ f.a }}</p>
             </sc-if>
           </div>
         </sc-for>
@@ -759,7 +856,7 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
   <div style="max-width:1600px;margin:0 auto;padding:84px 5vw 42px;display:flex;flex-direction:column;align-items:center;gap:48px;text-align:center">
     <div style="display:flex;flex-direction:column;align-items:center;gap:18px">
       <img src="assets/logo-gold.png" alt="CollectiveMB" style="height:110px;width:auto;display:block">
-      <span style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase">Collective MB</span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase">Collective MB</span>
     </div>
     <nav style="display:flex;flex-wrap:wrap;justify-content:center;gap:15px 42px">
       <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
@@ -776,7 +873,7 @@ input::placeholder,textarea::placeholder{color:#8C97A8}
   </div>
 </footer>
 <sc-if value="{{ showTop }}" hint-placeholder-val="{{ false }}">
-  <button onClick="{{ toTop }}" aria-label="Back to top" style="position:fixed;right:clamp(15px,2.4vw,36px);bottom:clamp(15px,2.4vw,36px);z-index:50;width:60px;height:60px;background:linear-gradient(135deg,#A9864A,#E6CD8E 50%,#A9864A);color:#0A1628;border:1px solid #E6CD8E;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;box-shadow:0 18px 40px -14px rgba(0,0,0,0.6);transition:filter .2s ease" style-hover="filter:brightness(1.1)"><span style="font-size:20px;line-height:1">↑</span><span style="font-family:Montserrat,sans-serif;font-size:9px;font-weight:600;letter-spacing:0.16em">TOP</span></button>
+  <button onClick="{{ toTop }}" aria-label="Back to top" style="position:fixed;right:clamp(15px,2.4vw,36px);bottom:clamp(15px,2.4vw,36px);z-index:50;width:60px;height:60px;background:linear-gradient(135deg,#A9864A,#E6CD8E 50%,#A9864A);color:#0A1628;border:1px solid #E6CD8E;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;box-shadow:0 18px 40px -14px rgba(0,0,0,0.6);transition:filter .2s ease" style-hover="filter:brightness(1.1)"><span style="font-size:18px;line-height:1">↑</span><span style="font-family:Montserrat,sans-serif;font-size:9px;font-weight:600;letter-spacing:0.16em">TOP</span></button>
 </sc-if>
 </div>
 </x-dc>
@@ -895,7 +992,7 @@ const rnd = (a,b) => a + Math.random()*(b-a);
 const SPARKS = Array.from({length:26},()=>({ l: rnd(0,100), s: rnd(2,5), d: rnd(9,18), delay: -rnd(0,18), b: rnd(4,30) }));
 const BUCKS = Array.from({length:14},()=>({ l: rnd(2,96), s: rnd(26,64), d: rnd(11,20), delay: -rnd(0,20), o: rnd(0.12,0.32), b: rnd(-10,30) }));
 class Component extends DCLogic {
-  state = { page: fromHash() || (typeof localStorage !== 'undefined' && localStorage.getItem('cmb3_page')) || 'about', topic: 0, faq: 0, sent: false, w: typeof window !== 'undefined' ? window.innerWidth : 1440, menuOpen: false, showTop: false };
+  state = { page: fromHash() || (typeof localStorage !== 'undefined' && localStorage.getItem('cmb3_page')) || 'about', topic: 0, faq: 0, step: 0, stepAnim: false, sent: false, w: typeof window !== 'undefined' ? window.innerWidth : 1440, menuOpen: false, showTop: false };
   go(page, ev) {
     if (ev && ev.preventDefault) ev.preventDefault();
     try { localStorage.setItem('cmb3_page', page); } catch (e) {}
@@ -913,6 +1010,7 @@ class Component extends DCLogic {
     set('meta[property="og:description"]', 'property', 'og:description', d);
   }
   componentDidMount() {
+    this.pickStep(0);
     this._appliedPage = this.state.page; this.fx(); this.seo(); setTimeout(() => this.seo(), 300); setTimeout(() => this.seo(), 1200);
     this._onResize = () => { const w = window.innerWidth; if (Math.abs(w - this.state.w) > 4) this.setState({ w }); };
     this._onScroll = () => { const s = window.scrollY > 700; if (s !== this.state.showTop) this.setState({ showTop: s }); };
@@ -929,7 +1027,7 @@ class Component extends DCLogic {
     setTimeout(() => { this.seo(); this.fx(); }, 0);
     setTimeout(() => this.seo(), 400);
   }
-  componentWillUnmount() { this._ro && this._ro.disconnect(); this.io && this.io.disconnect(); window.removeEventListener('resize', this._onResize); window.removeEventListener('scroll', this._onScroll); window.removeEventListener('hashchange', this._onHash); }
+  componentWillUnmount() { clearInterval(this._stepT); this._ro && this._ro.disconnect(); this.io && this.io.disconnect(); window.removeEventListener('resize', this._onResize); window.removeEventListener('scroll', this._onScroll); window.removeEventListener('hashchange', this._onHash); }
   fx() {
     clearTimeout(this._fxT);
     this._fxT = setTimeout(() => {
@@ -969,15 +1067,29 @@ class Component extends DCLogic {
       e('img', { src: 'assets/logo-gold.png', alt: '', style: { position: 'absolute', left: '50%', top: '50%', width: 58, transform: 'translate(-50%,-50%)' } }));
     return e('div', { 'aria-hidden': true, style: { position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' } }, sparks, withSeal ? seal : null);
   }
-  calmFx() {
+  approachImg(i) {
+    const e = React.createElement;
+    const src = ['assets/event-1.png','assets/event-versace-9.jpg','assets/event-2.jpg','assets/event-versace-10.jpg','assets/event-press.jpg'][i] || 'assets/event-1.png';
+    return e('img', { key: 'ap' + i, src, alt: '', style: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 20%', display: 'block', animation: 'cmbKen 9s cubic-bezier(.2,.6,.2,1) both' } });
+  }
+  pickStep(i) {
+    clearInterval(this._stepT);
+    this.setState({ step: i, stepAnim: false });
+    requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ stepAnim: true })));
+    this._stepT = setInterval(() => {
+      this.setState(s => ({ step: (s.step + 1) % 5, stepAnim: false }));
+      requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ stepAnim: true })));
+    }, 6000);
+  }
+  calmFx(dark) {
     const e = React.createElement;
     const orbs = [
-      { l: '-8%', t: '-10%', s: '46vw', c: 'rgba(230,205,142,0.30)', d: 34 },
-      { l: '58%', t: '30%', s: '40vw', c: 'rgba(201,169,97,0.22)', d: 42 },
-      { l: '20%', t: '60%', s: '34vw', c: 'rgba(170,190,210,0.22)', d: 50 },
+      { l: '-8%', t: '-10%', s: '46vw', c: dark ? 'rgba(201,169,97,0.16)' : 'rgba(230,205,142,0.30)', d: 34 },
+      { l: '58%', t: '30%', s: '40vw', c: dark ? 'rgba(120,150,200,0.14)' : 'rgba(201,169,97,0.22)', d: 42 },
+      { l: '20%', t: '60%', s: '34vw', c: dark ? 'rgba(230,205,142,0.10)' : 'rgba(170,190,210,0.22)', d: 50 },
     ];
     return e('div', { 'aria-hidden': true, style: { position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' } },
-      orbs.map((o, i) => e('div', { key: i, style: { position: 'absolute', left: o.l, top: o.t, width: o.s, height: o.s, borderRadius: '50%', background: 'radial-gradient(circle, ' + o.c + ' 0%, rgba(246,241,231,0) 68%)', filter: 'blur(10px)', animation: 'cmbDrift ' + o.d + 's ease-in-out ' + (-i * 9) + 's infinite' } })),
+      orbs.map((o, i) => e('div', { key: i, style: { position: 'absolute', left: o.l, top: o.t, width: o.s, height: o.s, borderRadius: '50%', background: 'radial-gradient(circle, ' + o.c + ' 0%, rgba(0,0,0,0) 68%)', filter: 'blur(10px)', animation: 'cmbDrift ' + o.d + 's ease-in-out ' + (-i * 9) + 's infinite' } })),
       e('div', { style: { position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(201,169,97,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,97,0.10) 1px, transparent 1px)', backgroundSize: '120px 120px', maskImage: 'radial-gradient(ellipse at center, #000 30%, transparent 75%)', WebkitMaskImage: 'radial-gradient(ellipse at center, #000 30%, transparent 75%)' } }));
   }
   moneyFx() {
@@ -1003,12 +1115,27 @@ class Component extends DCLogic {
       nav: PAGES.map(([id,label,title]) => ({ label, title, href: SLUG[id] ? '#/' + SLUG[id] : '#/', go: ev => this.go(id, ev), line: page === id ? '#C9A961' : 'transparent', mColor: page === id ? '#E6CD8E' : '#F6F1E7' })),
       btnWs: phone ? 'normal' : 'nowrap',
       gPill: 'repeat(' + (this.state.w >= 1180 ? 3 : 1) + ',minmax(0,1fr))',
-      calmFx: this._calm || (this._calm = this.calmFx()),
+      calmFx: this._calm || (this._calm = this.calmFx(false)),
+      calmFxDark: this._calmD || (this._calmD = this.calmFx(true)),
+      isXL: this.state.w >= 1180,
+      gSplit: 'repeat(' + (this.state.w >= 1000 ? 2 : 1) + ',minmax(0,1fr))',
+      splitMin: this.state.w >= 1000 ? '760px' : '420px',
+      gApproach: this.state.w >= 1000 ? 'minmax(0,5fr) minmax(0,7fr)' : 'minmax(0,1fr)',
+      approachTabs: STATIC.approach.map((a,i) => { const on = i === this.state.step; return { ...a, on, pick: () => this.pickStep(i),
+        bg: on ? 'linear-gradient(120deg,#A9864A 0%,#E6CD8E 45%,#C9A961 100%)' : 'transparent', fg: on ? '#0A1628' : '#F6F1E7', numC: on ? '#0A1628' : '#C9A961',
+        hoverBg: on ? 'linear-gradient(120deg,#A9864A 0%,#E6CD8E 45%,#C9A961 100%)' : 'rgba(201,169,97,0.10)', arrow: on ? '→' : '+',
+        bar: on && this.state.stepAnim ? '100%' : '0%', barT: on && this.state.stepAnim ? '6s' : '0s' }; }),
+      approachCur: STATIC.approach[this.state.step],
+      approachImg: this.approachImg(this.state.step),
+      g5: 'repeat(' + (this.state.w >= 1180 ? 5 : 1) + ',minmax(0,1fr))',
+      whyRest: STATIC.whyVideo.filter((x,i) => i >= 2),
+      mustAttend: STATIC.mustAttend.map((m,i) => ({ ...m, bl: (i > 0 && this.state.w >= 1180) ? '1px solid #C9A961' : '0' })),
+      videoFacts: [{ v:'15+', l:'Years of combined experience in video production' },{ v:'100s', l:'Of corporate and event videos produced' },{ v:'4K', l:'35mm digital cinema cameras on every shoot' }],
       g4: 'repeat(' + (this.state.w >= 900 ? 4 : 2) + ',minmax(0,1fr))',
       g3: 'repeat(' + (this.state.w >= 1100 ? 3 : this.state.w >= 680 ? 2 : 1) + ',minmax(0,1fr))',
       gPkg: 'repeat(' + (this.state.w >= 980 ? 3 : 1) + ',minmax(0,1fr))',
-      isWide: wide, isNarrow: !wide, showSub: !phone, logoH: wide ? 78 : (phone ? 50 : 62), wordSize: wide ? 28 : (phone ? 17 : 22),
-      headPad: wide ? '18px 5vw' : '15px 5vw', heroMin: phone ? 'auto' : ('calc(100vh - ' + (wide ? 170 : 92) + 'px)'),
+      isWide: wide, isNarrow: !wide, showSub: !phone, logoH: wide ? 62 : (phone ? 46 : 54), wordSize: wide ? 24 : (phone ? 16 : 20),
+      headPad: wide ? '18px 5vw' : '15px 5vw', heroMin: phone ? 'auto' : ('calc(100vh - ' + (wide ? 150 : 84) + 'px)'),
       menuOpen: this.state.menuOpen, openMenu: () => this.setState({ menuOpen: true }), closeMenu: () => this.setState({ menuOpen: false }),
       showTop: this.state.showTop, toTop: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
       isAbout: page==='about', isWeb: page==='web', isVideo: page==='video', isMarketing: page==='marketing', isEvents: page==='events', isContact: page==='contact',
